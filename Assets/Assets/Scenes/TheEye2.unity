@@ -568,6 +568,7 @@ GameObject:
   - component: {fileID: 74812008}
   - component: {fileID: 74812014}
   - component: {fileID: 74812013}
+  - component: {fileID: 74812015}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -588,11 +589,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 228.20557, y: 484.67657}
+  scrollPos: {x: -54.306385, y: 481.81494}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 321
-  zoom: 0.37
+  zoom: 0.34
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -600,8 +601,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74811999}
-  selectedCommands: []
+  - {fileID: 74812086}
+  selectedCommands:
+  - {fileID: 74812015}
   variables:
   - {fileID: 74811997}
   description: 
@@ -672,7 +674,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 148.71628
     y: -125.45856
-    width: 141.89189
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -771,7 +773,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 155.44345
     y: -35.314087
-    width: 152.7027
+    width: 161.76471
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -969,7 +971,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 369.6192
     y: -86.44092
-    width: 141.89189
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1072,6 +1074,24 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &74812015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 143
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: TheEye3
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &74812065
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1124,7 +1144,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -68.87952
     y: -75.91968
-    width: 187.83783
+    width: 200
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1461,7 +1481,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 531.91406
     y: -66.313385
-    width: 163.51352
+    width: 173.52942
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1568,7 +1588,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 524.45435
     y: 8.285431
-    width: 198.64865
+    width: 211.76471
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1595,7 +1615,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 548.7579
     y: -143.89633
-    width: 136.48648
+    width: 144.11765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1622,7 +1642,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 891.5021
     y: -68.15762
-    width: 201.35135
+    width: 214.70589
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1639,6 +1659,7 @@ MonoBehaviour:
   - {fileID: 74812097}
   - {fileID: 74812013}
   - {fileID: 74812096}
+  - {fileID: 74812015}
 --- !u!114 &74812087
 MonoBehaviour:
   m_ObjectHideFlags: 2
