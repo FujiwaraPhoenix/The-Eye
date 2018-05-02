@@ -1378,8 +1378,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 727.22205
-    y: 350.56842
+    x: 724.9493
+    y: 361.93198
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2042,12 +2042,12 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "Siobhan: \u201CAs long as I\u2019ve known them. They were always together
       at school, it seemed like. Not as many of the other kids would be as close with
-      her as Aoife was. It seemed like she was one of the few people who didn\u2019t
-      find it awkward to hang out with someone from the city.\u201D\r\nAnna: \u201CIs
-      that common around here?\u201D\r\nSiobhan: \u201CA little, I suppose. I\u2019ve
-      never seen anyone be aggressive to newcomers, but still it seems like they regard
-      you with a kind of\u2026 well, distance, I would say. I think that was true
-      for Cait.\u201D\r"
+      her as Aoife was. \nSiobhan: It seemed like she was one of the few people who
+      didn\u2019t find it awkward to hang out with someone from the city.\u201D\r\nAnna:
+      \u201CIs that common around here?\u201D\r\nSiobhan: \u201CA little, I suppose.
+      I\u2019ve never seen anyone be aggressive to newcomers, but still it seems like
+      they regard you with a kind of\u2026 well, distance, I would say. I think that
+      was true for Cait.\u201D\r"
 --- !u!114 &74812061
 MonoBehaviour:
   m_ObjectHideFlags: 2
