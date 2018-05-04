@@ -14,8 +14,10 @@ public class Controller : MonoBehaviour {
         GameObject go = GameObject.FindGameObjectWithTag("Flowchart");
         fc = go.GetComponent<Flowchart>();
         GameObject eye = GameObject.FindGameObjectWithTag("Eye");
+		if (eye != null){
         c2d = eye.GetComponent<Clickable2D>();
     }
+	}
 
     void Awake()
     {
