@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Scenes/TheEye3.unity
     guid: 632b84edbc82e4840963aaaf514d78cf
+  - enabled: 1
+    path: Assets/Assets/Scenes/TheEye4.unity
+    guid: 48c59997f3b76534b89543f81a469280

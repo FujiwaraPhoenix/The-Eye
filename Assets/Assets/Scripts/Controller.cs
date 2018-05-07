@@ -36,11 +36,7 @@ public class Controller : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (fc != null)
-        {
-            eyeUsedCounter = fc.GetIntegerVariable("eyeUsedCounter");
-        }
-        else
+        if (fc == null)
         {
             getCurrentMap();
         }
@@ -50,5 +46,13 @@ public class Controller : MonoBehaviour {
             SpriteRenderer sr = c2d.GetComponent<SpriteRenderer>();
             sr.enabled = !tempBool;
         }
+    }
+
+    void addEyeUse()
+    {
+        getCurrentMap();
+        eyeUsedCounter++;
+        fc.SetIntegerVariable("eyeUsedCounter", eyeUsedCounter);
+        Debug.Log("called!");
     }
 }
