@@ -19,7 +19,7 @@ public class Controller : MonoBehaviour {
             c2d = eye.GetComponent<Clickable2D>();
         }
     }
-	}
+	//}
 
     void Awake()
     {
