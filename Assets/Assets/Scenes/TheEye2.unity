@@ -524,16 +524,12 @@ GameObject:
   - component: {fileID: 74812007}
   - component: {fileID: 74812006}
   - component: {fileID: 74812004}
-  - component: {fileID: 74811999}
-  - component: {fileID: 74812003}
   - component: {fileID: 74812001}
   - component: {fileID: 74812000}
   - component: {fileID: 74812011}
   - component: {fileID: 74812076}
   - component: {fileID: 74812075}
   - component: {fileID: 74812074}
-  - component: {fileID: 74812078}
-  - component: {fileID: 74812077}
   - component: {fileID: 74812073}
   - component: {fileID: 74812072}
   - component: {fileID: 74812071}
@@ -564,11 +560,12 @@ GameObject:
   - component: {fileID: 74812096}
   - component: {fileID: 74811998}
   - component: {fileID: 74812002}
-  - component: {fileID: 74812009}
-  - component: {fileID: 74812008}
   - component: {fileID: 74812014}
   - component: {fileID: 74812013}
   - component: {fileID: 74812015}
+  - component: {fileID: 74812008}
+  - component: {fileID: 74812003}
+  - component: {fileID: 74811999}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -589,7 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -54.306385, y: 481.81494}
+  scrollPos: {x: -54.306385, y: 484.7561}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 321
@@ -601,9 +598,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812067}
+  - {fileID: 74812086}
   selectedCommands:
-  - {fileID: 74812007}
+  - {fileID: 74812097}
   variables:
   - {fileID: 74811997}
   description: 
@@ -661,29 +658,33 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &74811999
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 148.71628
-    y: -125.45856
-    width: 150
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 100
-  blockName: '"I''m sorry, okay?"'
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 74812078}
+  itemId: 146
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1962407387}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 8d98639e13c2bcc4dbe9286d6da6aff9, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 315665520}
+  facing: 1
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!114 &74812000
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -697,9 +698,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 103
   indentLevel: 0
-  text: '"Watch it yourself."'
+  text: Watch it yourself.
   description: 
-  targetBlock: {fileID: 74812003}
+  targetBlock: {fileID: 74812011}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -721,9 +722,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 102
   indentLevel: 0
-  text: '"I''m sorry, okay?"'
+  text: I'm sorry, okay?
   description: 
-  targetBlock: {fileID: 74811999}
+  targetBlock: {fileID: 74812011}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -760,29 +761,33 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &74812003
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 155.44345
-    y: -35.314087
-    width: 161.76471
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 101
-  blockName: '"Watch it yourself."'
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 74812077}
+  itemId: 145
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1962407387}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 8d98639e13c2bcc4dbe9286d6da6aff9, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 315665520}
+  facing: 1
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!114 &74812004
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -836,8 +841,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 98
   indentLevel: 0
-  storyText: "It\u2019s high noon, the sun is beating down on my head, I want nothing
-    more than to be asleep. On top of that, my back still hurts from the flight, "
+  storyText: "I want nothing more than to be asleep. On top of that my back still
+    hurts from the flight, I\u2019m sweaty from putting on too many wool blankets,
+    and the back of my hand itches. Frankly, I\u2019ve earned the right to gripe."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -878,7 +884,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &74812008
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -887,7 +893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 140
+  itemId: 144
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
@@ -905,33 +911,6 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
---- !u!114 &74812009
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 74811995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 139
-  indentLevel: 0
-  storyText: "I\u2019m sweaty from putting on too many wool blankets, the back of
-    my hand itches. Frankly, I\u2019ve earned the right to gripe."
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &74812010
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -945,7 +924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 117
   indentLevel: 0
-  text: '"I must be sleep deprived."'
+  text: I must be sleep deprived.
   description: 
   targetBlock: {fileID: 74812084}
   hideIfVisited: 0
@@ -981,7 +960,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 74812076}
-  - {fileID: 74812008}
   - {fileID: 74812075}
   - {fileID: 74812074}
   - {fileID: 74812073}
@@ -1005,7 +983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 116
   indentLevel: 0
-  text: '"What do you want?"'
+  text: What do you want?
   description: 
   targetBlock: {fileID: 74812080}
   hideIfVisited: 0
@@ -1076,7 +1054,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &74812015
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1105,7 +1083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 115
   indentLevel: 0
-  text: '"What are you?"'
+  text: What are you?
   description: 
   targetBlock: {fileID: 74812085}
   hideIfVisited: 0
@@ -1142,8 +1120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -68.87952
-    y: -75.91968
+    x: 125.23816
+    y: -87.68439
     width: 200
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1157,7 +1135,6 @@ MonoBehaviour:
   - {fileID: 74812007}
   - {fileID: 74812002}
   - {fileID: 74812006}
-  - {fileID: 74812009}
   - {fileID: 74812004}
   - {fileID: 74811998}
   - {fileID: 74812001}
@@ -1175,9 +1152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 96
   indentLevel: 0
-  storyText: "I fall asleep eventually, only to wake up at 12. As long as I need to
-    head down to the police station to try and find Inspector O\u2019Callaghan or
-    his daughter Aoife, "
+  storyText: "I fall asleep eventually, only to wake up at 12. I need to head down
+    to the police station to try and find Inspector O\u2019Callaghan and his daughter,
+    Aoife."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1189,7 +1166,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1272588197}
 --- !u!114 &74812069
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1229,7 +1206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 113
   indentLevel: 0
-  storyText: "\u201CYes, Annabelle. Let me take the wheel every once in a while.\u201D\r"
+  storyText: Yes, Annabelle. Let me take the wheel every once in a while.
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1281,7 +1258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 111
   indentLevel: 0
-  storyText: "\u201CYou must look deeper, Answerer. Allow me to help.\u201D"
+  storyText: You must look deeper, Answerer. Allow me to help.
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1333,7 +1310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 107
   indentLevel: 0
-  storyText: "\u201CLook, I said...\u201D"
+  storyText: Hey, I'm sorry, it's been a long...
   description: 
   character: {fileID: 613027383}
   portrait: {fileID: 0}
@@ -1359,7 +1336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 106
   indentLevel: 0
-  storyText: "\u201CYou will never find answers that way.\u201D"
+  storyText: You will never find answers that way.
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1385,9 +1362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 105
   indentLevel: 0
-  storyText: He glares over his shoulder and keeps walking. Nice going, Anna. I turn
-    and walk away. Hopefully I can get this investigation by talking to people as
-    little as possible.
+  storyText: "He glares over his shoulder and keeps walking. Nice going, Anna. \r\nHopefully
+    I can get this investigation over with by talking to people as little as possible.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1400,46 +1376,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &74812077
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 74811995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 109
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 74812011}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &74812078
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 74811995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 108
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 74812011}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &74812079
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1453,7 +1389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 124
   indentLevel: 0
-  storyText: "\u201CGet it, Annabelle? 'See' to it? Like an eye?\u201D"
+  storyText: Yes, Annabelle, there are secrets to uncover.
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1490,6 +1426,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812003}
   - {fileID: 74812081}
   - {fileID: 74812079}
   - {fileID: 74812092}
@@ -1506,8 +1443,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 123
   indentLevel: 0
-  storyText: "\u201CI am invested in solving the mystery at hand, Answerer. Justice
-    must be seen two, and you will see to it.\u201D"
+  storyText: I am invested in solving the mystery at hand, Answerer. Justice must
+    be done.
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1533,7 +1470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 122
   indentLevel: 0
-  storyText: "\u201CYes, Annabelle, your task, and some other fun.\u201D"
+  storyText: Yes, Annabelle, your task, and some other fun.
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1559,8 +1496,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 121
   indentLevel: 0
-  storyText: "\u201CI am the creation of forces beyond your understanding, sent here
-    to help you fulfill your task, Answerer.\u201D"
+  storyText: I am the creation of forces beyond your understanding, sent here to help
+    you fulfill your task, Answerer.
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1597,6 +1534,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74811999}
   - {fileID: 74812095}
   - {fileID: 74812094}
   - {fileID: 74812091}
@@ -1624,6 +1562,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812008}
   - {fileID: 74812083}
   - {fileID: 74812082}
   - {fileID: 74812093}
@@ -1640,8 +1579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 891.5021
-    y: -68.15762
+    x: 867.9728
+    y: -85.80469
     width: 214.70589
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1673,7 +1612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 132
   indentLevel: 0
-  storyText: "\u201C...Let\u2019s see what we can do together.\u201D"
+  storyText: "...Let\u2019s see what we can do together."
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1699,7 +1638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 131
   indentLevel: 0
-  storyText: "\u201C...My dear Annabelle...\u201D"
+  storyText: '...My dear Annabelle...'
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1725,7 +1664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 130
   indentLevel: 0
-  storyText: "\u201CIt\u2019s your task to find out. You are my Answerer...\u201D"
+  storyText: "It\u2019s your task to find out. You are my Answerer..."
   description: 
   character: {fileID: 1962407387}
   portrait: {fileID: 0}
@@ -1751,7 +1690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 129
   indentLevel: 0
-  storyText: '"What the hell is going on?"'
+  storyText: What the hell is going on?
   description: 
   character: {fileID: 613027383}
   portrait: {fileID: 0}

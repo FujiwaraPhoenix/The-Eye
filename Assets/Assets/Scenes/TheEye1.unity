@@ -530,14 +530,11 @@ GameObject:
   - component: {fileID: 74812012}
   - component: {fileID: 74812013}
   - component: {fileID: 74812014}
-  - component: {fileID: 74812035}
-  - component: {fileID: 74812036}
   - component: {fileID: 74812002}
   - component: {fileID: 74812022}
   - component: {fileID: 74812021}
   - component: {fileID: 74812020}
   - component: {fileID: 74812019}
-  - component: {fileID: 74812017}
   - component: {fileID: 74812018}
   - component: {fileID: 74812030}
   - component: {fileID: 74812028}
@@ -548,7 +545,6 @@ GameObject:
   - component: {fileID: 74812032}
   - component: {fileID: 74812055}
   - component: {fileID: 74812054}
-  - component: {fileID: 74812053}
   - component: {fileID: 74812052}
   - component: {fileID: 74812051}
   - component: {fileID: 74812049}
@@ -579,6 +575,23 @@ GameObject:
   - component: {fileID: 74812026}
   - component: {fileID: 74812057}
   - component: {fileID: 74811999}
+  - component: {fileID: 74812069}
+  - component: {fileID: 74812068}
+  - component: {fileID: 74812067}
+  - component: {fileID: 74812066}
+  - component: {fileID: 74812053}
+  - component: {fileID: 74812050}
+  - component: {fileID: 74812046}
+  - component: {fileID: 74812036}
+  - component: {fileID: 74812035}
+  - component: {fileID: 74812023}
+  - component: {fileID: 74812017}
+  - component: {fileID: 74812016}
+  - component: {fileID: 74812009}
+  - component: {fileID: 74812071}
+  - component: {fileID: 74812070}
+  - component: {fileID: 74812072}
+  - component: {fileID: 74812073}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -599,11 +612,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 28.387718, y: 186.56097}
+  scrollPos: {x: -32.675774, y: 251.94812}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 231
-  zoom: 0.2500001
+  blockViewHeight: 232
+  zoom: 0.3100001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -611,9 +624,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812004}
+  - {fileID: 74812008}
   selectedCommands:
-  - {fileID: 74812006}
+  - {fileID: 74812032}
   variables:
   - {fileID: 74811997}
   description: 
@@ -653,9 +666,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 210.10953
+    x: 213.33533
     y: 93.82977
-    width: 197.99995
+    width: 169.3548
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -665,6 +678,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 74812002}
+  - {fileID: 74812071}
+  - {fileID: 74812070}
   - {fileID: 74812052}
 --- !u!114 &74811999
 MonoBehaviour:
@@ -747,25 +762,22 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Siobhan: I can tell.\u2026 Are you alright?\u201D\n\nAnna: I\u2019m
-      fine. Still haven\u2019t gotten used to the added security, so travelling sucks.
-      Just remind me on what\u2019s going on.\n\nSiobhan: Well, I texted you the basics,
-      but a girl named Cait Healy went missing a couple of days ago, and the police
-      here haven\u2019t been able to find anything.\n\nAnna: Any leads so far?\n\nSiobhan:
-      The family moved here from the city, so they\u2019ve been the talk o\u2019 the
-      town for weeks. She is\u2014was\u2014close with the inspector\u2019s daughter,
-      Aoife, so it might be worth it to talk to her about it.\n \nSiobhan: She was
-      the last one to see the girl, anyway. She\u2019s\u2026 pretty upset, though,
-      so don\u2019t press too hard just yet.\r\n\r\nSiobhan: Actually, she and Cait
-      kind of reminded me of \u2026 well. Just talk to her, and you\u2019ll have a
-      lead.\n\nAnna: Sounds like a good starting point. Thanks, Siobhan. I\u2019ll
+    stringVal: "Siobhan: I can tell.\u2026 Are you alright?\n\nAnna: I\u2019m fine.
+      Still haven\u2019t gotten used to the added security, so travelling sucks. Just
+      refresh my memory about the case you have for me.\n\nSiobhan: Well, I texted
+      you the basics, but a girl named Cait Healy went missing a couple of days ago,
+      and the police here haven\u2019t been able to find anything.\n\nAnna: Any leads
+      so far?\n\nSiobhan: She and her mother moved here from the city, so they\u2019ve
+      been the talk o\u2019 the town for weeks. She's close with the inspector\u2019s
+      daughter, Aoife, so it might be worth it to talk to her about it.\n \nSiobhan:
+      She was the last one to see the girl, anyway. She\u2019s\u2026 pretty upset,
+      though, so don\u2019t press too hard just yet.\r\n\r\nSiobhan: Actually, she
+      and Cait kind of reminded me of \u2026 well. Just talk to her, and you\u2019ll
+      have a lead.\n\nAnna: Sounds like a good starting point. Thanks, Siobhan. I\u2019ll
       do my best to find her.\r\n\nSiobhan: I know you will. It\u2019s why I called
       on you.\n\nAnna: That\u2019s the only reason?\n\nSiobhan: Well, obviously it\u2019s
       an excuse to see your face again, too.\r\n\nAnna: You never complimented me
-      this much when we were together.\n\n--Siobhan flushes, grimacing. Maybe the
-      jab hit too hard...\r\n\nSiobhan: I don\u2019t have as big of an ego anymore.
-      Now that we\u2019re friends, I can... \n\nAnna: ...\n\nSiobhan: Ahem. Well,
-      you look racked. Get some rest, get to investigating tomorrow."
+      this much when we were together."
 --- !u!114 &74812003
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -796,7 +808,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 21.186853
     y: 83.46843
-    width: 129.99997
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -891,9 +903,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 176.76527
-    y: 158.6945
-    width: 273.99994
+    x: 183.21687
+    y: 165.1461
+    width: 230.64511
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -905,6 +917,7 @@ MonoBehaviour:
   - {fileID: 74812030}
   - {fileID: 74812029}
   - {fileID: 74812028}
+  - {fileID: 74812072}
   - {fileID: 74812027}
   - {fileID: 74812026}
   - {fileID: 74812025}
@@ -912,6 +925,26 @@ MonoBehaviour:
   - {fileID: 74812055}
   - {fileID: 74812032}
   - {fileID: 74812051}
+--- !u!114 &74812009
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 109
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 74812053}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &74812010
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1007,9 +1040,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 191.86322
-    y: 13.712867
-    width: 237.99994
+    x: 25.86322
+    y: -53.787125
+    width: 201.61285
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1025,9 +1058,7 @@ MonoBehaviour:
   - {fileID: 74812019}
   - {fileID: 74812018}
   - {fileID: 74812036}
-  - {fileID: 74812017}
   - {fileID: 74812035}
-  - {fileID: 74812053}
 --- !u!114 &74812014
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1072,6 +1103,32 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &74812016
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 108
+  indentLevel: 0
+  storyText: Right, um, sure.
+  description: 
+  character: {fileID: 358163474}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &74812017
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1083,17 +1140,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 46
+  itemId: 107
   indentLevel: 0
-  storyText: "Oh, forget it. First time in years we\u2019re in the same room, we\u2019re
-    already getting into it. I should be letting you get some rest."
+  storyText: "Right, sure. Well, first I wanted to know a bit more about this missing
+    person\u2019s case.\r"
   description: 
-  character: {fileID: 358163474}
+  character: {fileID: 613027383}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
-  extendPrevious: 1
+  extendPrevious: 0
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
@@ -1112,8 +1169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 47
   indentLevel: 0
-  storyText: "Now I\u2019ve done it. Truth is, I wish I didn\u2019t know why she moved
-    here."
+  storyText: "Now I\u2019ve done it. Truth is, I wish I didn\u2019t know the reason."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1141,11 +1197,12 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Siobhan: So, um, how do you like the place? Kilea, I mean.\n\nAnna:
-      Not really a small town girl, Sib. For the life of me I don\u2019t know why
-      you moved out here.\u201D\n\n--Siobhan looks uncomfortable, and a little bit
-      tense, with the question. Anna herself is uncomfortable having just realized
-      what she even said.\r"
+    stringVal: "Siobhan: So, um, how do you like the place? Kilea, I mean. I know
+      you\u2019re more of a big city detective, but maybe you can solve a case in
+      this little town, too.\n\nAnna: Not really a small town girl, Sib. For the life
+      of me I don\u2019t know why you moved out here.\u201D\n\n--Siobhan looks uncomfortable,
+      and a little bit tense, with the question. Anna herself is uncomfortable having
+      just realized what she even said.\r"
 --- !u!114 &74812020
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1172,7 +1229,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1272588197}
 --- !u!114 &74812021
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1188,9 +1245,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Siobhan: Yeah, I get that. You should\u2019ve seen me the first time
-      I flew in. I was kind of a mess.\n\nAnna: You? Never.\u201D\n\nSiobhan: Shut
-      up."
+    stringVal: "Siobhan: Yeah, I get that. You should\u2019ve seen me when I flew
+      in. I was kind of a mess.\n\nAnna: You? Never.\u201D\n\nSiobhan: Shut up."
 --- !u!114 &74812022
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1217,7 +1273,27 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1272588197}
+--- !u!114 &74812023
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 106
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 74812053}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &74812024
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1317,8 +1393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 52
   indentLevel: 0
-  storyText: "\u201CSo there\u2019s this girl, family moved here from the city. She\u2019s
-    been missing for a few days now. Apparently police aren\u2019t able to find anything.\u201D"
+  storyText: "So there\u2019s this girl, family moved here from the city. She\u2019s
+    been missing for a few days now."
   description: 
   character: {fileID: 358163474}
   portrait: {fileID: 0}
@@ -1401,7 +1477,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 760.9493
     y: 385.93198
-    width: 121.99998
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1431,10 +1507,10 @@ MonoBehaviour:
       me of\u2026 um. I mean, she\u2019s pretty shaken up about it, though.\n\nI guess
       you could ask her about it, might be better to talk to her dad, Inspector O\u2019Callaghan.
       Not sure what you could get out of her that he wouldn\u2019t know already anyway.\n\nAnna:
-      Alright. It\u2019s a start.\n\nSiobhan: \u201CRight. And, um, thanks for doing
-      this. Clearly coming all the way out here isn\u2019t your idea of a good time,
-      but I\u2019m glad you did.\u201D\r\n\nAnna: \u201CYeah, sure.\u201D\r\n\nSiobhan:
-      \u201CAlright, well, you look racked, I should let you get some sleep.\u201D\r"
+      Alright. It\u2019s a start.\n\nSiobhan: Right. And, um, thanks for doing this.
+      Clearly coming all the way out here isn\u2019t your idea of a good time, but
+      I\u2019m glad you did.\n\nAnna: Yeah, sure.\n\nSiobhan: Alright, well, you look
+      racked, I should let you get some sleep."
 --- !u!114 &74812033
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1484,6 +1560,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 74812047}
+  - {fileID: 74812073}
   - {fileID: 74812015}
   - {fileID: 74812037}
 --- !u!114 &74812035
@@ -1494,28 +1571,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 36
+  itemId: 105
   indentLevel: 0
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: "Anna: Right, sure. Well, first I wanted to know a bit more about this
-      missing person\u2019s case.\r\n\nSiobhan: Okay, yeah. Most of it\u2019s what
-      I texted you, but basically a girl in town\u2019s gone missing. Her name\u2019s
-      Cait, Cait Healy. Actually, she is\u2014I mean, was\u2014one of my secondary
-      students.\r\n\nAnna: Anyone who would want to make her disappear?\n\nSiobhan:
-      No, no one I can think of. She was well-liked in town, especially by Aoife,
-      the Chief Inspector\u2019s daughter.\n\nAnna: \u201CSo the police should be
-      all over this, then.\u201D\r\n\nSiobhan: \u201CThey gave up about a day or two
-      ago. That\u2019s why I called you.\u201D\r\n\nAnna: \u201CRight. Well, I\u2019ll
-      have to start somewhere.\u201D\r\n\nSiobhan: \u201CI suppose you could talk
-      to Aoife or her father, the Chief Inspector. She was close to Cait, and he was
-      investigating the whole thing for a little while. Besides, you could probably
-      find them under the same roof anyway.\u201D\r\n\nAnna: \u201CGot it. Thanks,
-      Sib.\u201D\r\n\nSiobhan: \u201CSure. Thanks for coming all this way. Anyway,
-      you should probably get some sleep. You look racked.\u201D\r"
+  text: "Uh, anyway, about the case\u2026"
+  description: 
+  targetBlock: {fileID: 74812068}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &74812036
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1524,24 +1595,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 37
+  itemId: 104
   indentLevel: 0
-  storyText: "That\u2019s a hell of a question to\u2026 "
+  text: Right, sorry
   description: 
-  character: {fileID: 358163474}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  targetBlock: {fileID: 74812069}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &74812037
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1633,7 +1702,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 777.1112
     y: 251.70511
-    width: 157.99997
+    width: 137.09674
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1683,7 +1752,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 979.01764
     y: 161.46783
-    width: 185.99995
+    width: 159.67738
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1772,6 +1841,26 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &74812046
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 103
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 74812054}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &74812047
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1785,9 +1874,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 80
   indentLevel: 0
-  storyText: Well, the father took a work opportunity in the city about five years
-    ago. I think Cait and her mother were tired of living there, so they moved to
-    Kilea about four years ago, and Ethan visits as often as he can.
+  storyText: "Not too long. Maybe about two years ago. It\u2019s just Cait and her
+    mother. I barely ever see Ellen, I think she\u2019s always out of town for work.
+    She\u2019s a software engineer, I think.\r"
   description: 
   character: {fileID: 358163474}
   portrait: {fileID: 0}
@@ -1848,6 +1937,34 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &74812050
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 102
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Siobhan: Okay, yeah. Most of it\u2019s what I texted you, but basically
+      a girl in town\u2019s gone missing. Her name\u2019s Cait, Cait Healy. Actually,
+      she\u2019s one of my secondary students.\n\nAnna: Anyone who would want to make
+      her disappear?\n\nSiobhan: No, no one I can think of. She was well-liked in
+      town, especially by Aoife, the Chief Inspector\u2019s daughter.\n\nAnna: \u201CSo
+      the police should be all over this, then.\u201D\r\n\nSiobhan: \u201CThey gave
+      up about a day or two ago. That\u2019s why I called you.\u201D\r\n\nAnna: \u201CRight.
+      Well, I\u2019ll have to start somewhere.\u201D\r\n\nSiobhan: \u201CI suppose
+      you could talk to Aoife or her father, the Chief Inspector. She was close to
+      Cait, and he was investigating the whole thing for a little while. Besides,
+      you could probably find them under the same roof anyway.\u201D\r\n\nAnna: \u201CGot
+      it. Thanks, Sib.\u201D\r\n\nSiobhan: \u201CSure. Thanks for coming all this
+      way. Anyway, you should probably get some sleep. You look racked.\u201D\r"
 --- !u!114 &74812051
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1896,18 +2013,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 60
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 74812054}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 458.5316
+    y: -10.878963
+    width: 156.45158
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 101
+  blockName: Discussing the Case
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 74812050}
+  - {fileID: 74812046}
 --- !u!114 &74812054
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2203,6 +2326,210 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &74812066
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 100
+  indentLevel: 0
+  storyText: "Oh, forget it. First time in years we\u2019re in the same room, we\u2019re
+    already getting into it. I should be letting you get some rest."
+  description: 
+  character: {fileID: 358163474}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 1
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812067
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 99
+  indentLevel: 0
+  storyText: "That\u2019s a hell of a question to\u2026 "
+  description: 
+  character: {fileID: 358163474}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812068
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 223.53159
+    y: 19.12106
+    width: 204.83867
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 98
+  blockName: "\u201CUh, anyway, about the case\u2026\u201D"
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 74812016}
+  - {fileID: 74812009}
+--- !u!114 &74812069
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 263.5316
+    y: -50.87892
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 97
+  blockName: Right, sorry
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 74812067}
+  - {fileID: 74812066}
+  - {fileID: 74812017}
+  - {fileID: 74812023}
+--- !u!114 &74812070
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 111
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Siobhan: I don\u2019t have as big of an ego anymore. Now that we\u2019re
+      friends, I can... \n\nAnna: ...\n\nSiobhan: Ahem. Well, you look racked. Get
+      some rest, get to investigating tomorrow."
+--- !u!114 &74812071
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 110
+  indentLevel: 0
+  storyText: Siobhan flushes, grimacing. Maybe the jab hit too hard...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1272588197}
+--- !u!114 &74812072
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 112
+  indentLevel: 0
+  storyText: "Apparently police aren\u2019t able to find anything. I was hoping a
+    good PI might be able to, and you were the first person I thought of."
+  description: 
+  character: {fileID: 358163474}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812073
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 113
+  indentLevel: 0
+  storyText: "Can\u2019t imagine what she\u2019s going through right about now.\r"
+  description: 
+  character: {fileID: 358163474}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &76731907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2981,6 +3308,9 @@ MonoBehaviour:
   fc: {fileID: 0}
   c2d: {fileID: 0}
   eyeUsedCounter: 0
+  spokeToColleen: 0
+  colleenConfessed: 0
+  spokeToEllen: 0
 --- !u!4 &311730877
 Transform:
   m_ObjectHideFlags: 0

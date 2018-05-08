@@ -638,6 +638,13 @@ GameObject:
   - component: {fileID: 74812119}
   - component: {fileID: 74812116}
   - component: {fileID: 74812120}
+  - component: {fileID: 74812121}
+  - component: {fileID: 74812009}
+  - component: {fileID: 74812122}
+  - component: {fileID: 74812123}
+  - component: {fileID: 74812126}
+  - component: {fileID: 74812124}
+  - component: {fileID: 74812125}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -658,11 +665,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 181.8428, y: -31.592155}
+  scrollPos: {x: -35.268322, y: -118.44108}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 222
-  zoom: 0.8140005
+  zoom: 0.66400063
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -672,7 +679,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 74811999}
   selectedCommands:
-  - {fileID: 74812069}
+  - {fileID: 74812067}
   variables:
   - {fileID: 74811997}
   - {fileID: 74812014}
@@ -760,6 +767,9 @@ MonoBehaviour:
   - {fileID: 74812072}
   - {fileID: 74812071}
   - {fileID: 74812070}
+  - {fileID: 74812124}
+  - {fileID: 74812126}
+  - {fileID: 74812125}
   - {fileID: 74812069}
   - {fileID: 74812068}
   - {fileID: 74812092}
@@ -810,6 +820,8 @@ MonoBehaviour:
   - {fileID: 74812017}
   - {fileID: 74812011}
   - {fileID: 74812008}
+  - {fileID: 74812121}
+  - {fileID: 74812009}
   - {fileID: 74812096}
   - {fileID: 74812095}
   - {fileID: 74812029}
@@ -890,8 +902,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -50.94518
-    y: 172.15141
-    width: 153.19403
+    y: 175.16345
+    width: 135.84329
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -900,6 +912,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 74812003}
   commandList:
+  - {fileID: 74812037}
   - {fileID: 74812049}
   - {fileID: 74812006}
   - {fileID: 74811998}
@@ -908,7 +921,6 @@ MonoBehaviour:
   - {fileID: 74812007}
   - {fileID: 74812002}
   - {fileID: 74812001}
-  - {fileID: 74812037}
 --- !u!4 &74812005
 Transform:
   m_ObjectHideFlags: 0
@@ -965,11 +977,11 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Shanon: Yes. Thank you, John. I\u2019ll get the Chief to look into
-      it as soon as possible. This mess with Cait is going to make things take a little
+    stringVal: "Shanon: Yes. Thank you. I\u2019ll get the Chief to look into it as
+      soon as possible. This mess with Cait is going to make things take a little
       longer, but we\u2019ll get to you soon. \r\nShanon: Thank you! Have a great
       day. \r\nShanon: Okay. Bye-bye. \r\nShanon: Sorry about that. Can I help you?\r\nAnna:
-      Yes you can!"
+      Yes, you can."
 --- !u!114 &74812008
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -987,7 +999,33 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "Anna: It\u2019s really tragic, but I need your help. Do you mind if
       I ask you a few questions?\r\nAoife: Yeah, I\u2019ll try my best to help.\r\nThe
-      Eye: I have some information that might be helpful. Come on. Use me.\r"
+      Eye: Answerer, this is where I can help. Use my power."
+--- !u!114 &74812009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 136
+  indentLevel: 0
+  storyText: 'The Eye: Come on, Annabelle, just give me a try.'
+  description: 
+  character: {fileID: 1238509849}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1272588197}
 --- !u!114 &74812010
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1097,7 +1135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  storyText: "She\u2019s right over there, sitting at that desk."
+  storyText: "She\u2019s right over there in the waiting area."
   description: 
   character: {fileID: 1674190319}
   portrait: {fileID: 0}
@@ -1126,8 +1164,7 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Anna: You must be Aoife. I\u2019m Anna.\r\nAoife: Hi Anna. Are you
-      Siobhan\u2019s friend?\r\nAnna: Uh... yeah, that\u2019s a word for it. Were
-      you Cait\u2019s friend?\r"
+      Siobhan\u2019s friend?\r\nAnna: Uh... yeah. Are you friends with Cait?"
 --- !u!114 &74812017
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1141,9 +1178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
-  storyText: "Yeah. We've been best friends since she came into town. She and I really
-    hit it off and I think we would\u2019ve been friends for a long time. It\u2019s
-    so sad\u2026"
+  storyText: 'Yeah. She and I really hit it off when she came to town. '
   description: 
   character: {fileID: 1426929228}
   portrait: {fileID: 0}
@@ -1214,8 +1249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 19
   indentLevel: 0
-  storyText: "She looks impatient and tired, like she hasn\u2019t slept much, which
-    makes sense considering Siobhan told me that exams are coming up."
+  storyText: "She looks impatient and tired, like she hasn\u2019t slept much."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1271,19 +1305,19 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Aoife: Well, she and I were hanging out like we did almost everyday.
-      We decided to just take a walk this time and we ended up in the downtown area.\nAoife:
-      I stopped and looked in the antique shop window cause I love that store. I could\u2019ve
-      sworn I saw something my mom used to own, so I ran in to check. When I came
-      back out, Cait was gone.\r\nAnna: Did you go looking for her?\r\nAoife: I mean
-      a little. But she could\u2019ve gone literally anywhere, so I just went home
-      after a little while. \r\nAnna: You didn\u2019t see her walk away in the reflection?\r\nAoife:
-      Well, it was a cloudy day, so it was hard to see. And I was just so focused
-      on what I thought was my mom\u2019s old broach.\r\nAnna: Was it?\r\nAoife: No,
-      it just looked really similar. I wish I hadn\u2019t run in without her. I miss
-      her so much. \r\nAnna: Do you have any idea where she could\u2019ve gone?\r\nAoife:
-      Not really. Like I told you before, she could\u2019ve gone anywhere. I figured
-      she was mad at me for something, so I just went home.\r\nAnna: Alright, well
-      I have some other questions.\r\n"
+      We decided to take a walk around town. \nAoife: I stopped and looked in the
+      antique shop window because I love that store. I could\u2019ve sworn I saw something
+      my mom used to own, so I ran in to check. When I came back out, Cait was gone.\nAnna:
+      Did you go looking for her?\r\nAoife: I mean a little. But she could\u2019ve
+      gone literally anywhere, so I just went home after a little while. \r\nAnna:
+      You didn\u2019t see her walk away in the reflection?\r\nAoife: Well, it was
+      a cloudy day, so it was hard to see. And I was just so focused on what I thought
+      was my mom\u2019s old broach.\r\nAnna: Was it?\r\nAoife: No, it just looked
+      really similar. I wish I hadn\u2019t run in without her. I miss her so much.
+      \r\nAnna: Do you have any idea where she could\u2019ve gone?\r\nAoife: Not really.
+      Like I told you before, she could\u2019ve gone anywhere. I figured she was mad
+      at me for something, so I just went home.\r\nAnna: Alright, well I have some
+      other questions.\r\n"
 --- !u!114 &74812023
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1546,7 +1580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 31
-  indentLevel: 0
+  indentLevel: 1
   text: When did you last see her?
   description: 
   targetBlock: {fileID: 74812028}
@@ -1570,7 +1604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 29
-  indentLevel: 0
+  indentLevel: 1
   text: What happened the last time you saw Cait?
   description: 
   targetBlock: {fileID: 74812023}
@@ -1606,8 +1640,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812122}
   - {fileID: 74812034}
   - {fileID: 74812033}
+  - {fileID: 74812123}
   - {fileID: 74812032}
   - {fileID: 74812031}
   - {fileID: 74812030}
@@ -1654,7 +1690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 0
-  targetClickable2D: {fileID: 0}
+  targetClickable2D: {fileID: 905348965}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2286,12 +2322,12 @@ MonoBehaviour:
       Well I\u2019m not sure there\u2019s a whole lot more I can tell you, she\u2019s
       probably the best to ask. Here\u2019s what we know: we believe Cait went missing
       around 3 PM, but we can\u2019t say for sure.\nThomas: Constable Byrne last saw
-      the pair heading into the woods around 2 PM, but we don\u2019t think they were
-      seen after that. All we know is what Aoife says.\r\nAnna: Into the woods? Interesting
-      okay. I think I\u2019m going to go talk to Cait\u2019s parents, I want to know
-      what they have to say.\r\nThomas: I know you\u2019re new here, but don\u2019t
-      do that. Give them some time to grieve. They haven\u2019t had any time at all
-      to process.\r\n"
+      the pair heading into the woods around 2 PM, and then saw them leave again around
+      2:30. All we know is what Aoife says.\nAnna: Into the woods? Interesting okay.
+      I think I\u2019m going to go talk to Cait\u2019s mother, I want to know what
+      they have to say.\r\nThomas: I know you\u2019re new here, but don\u2019t do
+      that. Give Ms. Healy some time to grieve. She hasn\u2019t had any time at all
+      to process this.\n"
 --- !u!114 &74812068
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2529,7 +2565,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 301.67856
     y: 332.7113
-    width: 151.96555
+    width: 134.33728
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3452,7 +3488,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.96231
     y: 375.16104
-    width: 133.53802
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3533,6 +3569,139 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &74812121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 135
+  indentLevel: 0
+  storyText: That eye again. What is it talking about?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1272588197}
+--- !u!114 &74812122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 137
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 74812013}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 138
+  indentLevel: 0
+--- !u!114 &74812124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 140
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 74811997}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 141
+  indentLevel: 0
+--- !u!114 &74812126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 139
+  indentLevel: 1
+  storyText: His office is just over there. He has time to see you now, if you would
+    like.
+  description: 
+  character: {fileID: 1674190319}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &76731907
 GameObject:
   m_ObjectHideFlags: 0
@@ -7754,6 +7923,9 @@ MonoBehaviour:
   fc: {fileID: 0}
   c2d: {fileID: 0}
   eyeUsedCounter: 0
+  spokeToColleen: 0
+  colleenConfessed: 0
+  spokeToEllen: 0
 --- !u!4 &1325089977
 Transform:
   m_ObjectHideFlags: 0
