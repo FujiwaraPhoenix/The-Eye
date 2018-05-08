@@ -574,6 +574,9 @@ GameObject:
   - component: {fileID: 74812051}
   - component: {fileID: 74812045}
   - component: {fileID: 74812054}
+  - component: {fileID: 74812055}
+  - component: {fileID: 74812057}
+  - component: {fileID: 74812056}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -594,11 +597,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -534.626, y: -83.653534}
+  scrollPos: {x: 257.68405, y: 12.6615715}
   variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 0
+  variablesExpanded: 1
   blockViewHeight: 313
-  zoom: 0.8805004
+  zoom: 0.3105007
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -606,9 +609,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812021}
+  - {fileID: 74812041}
   selectedCommands:
-  - {fileID: 74812028}
+  - {fileID: 74812040}
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
@@ -650,7 +653,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1272588197}
 --- !u!114 &74811998
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -739,9 +742,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 137.60712
-    y: 297.5715
-    width: 165.84323
+    x: 142.77509
+    y: 301.0168
+    width: 143.39752
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -765,9 +768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 164.90704
-    y: 190.3584
-    width: 157.89319
+    x: 144.23518
+    y: 188.63574
+    width: 133.73572
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -813,7 +816,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 382.48685
     y: 245.54172
-    width: 151.07889
+    width: 133.73572
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -976,7 +979,7 @@ MonoBehaviour:
       in biology, I think. She would talk about wanting to teach ecology in school.\nThomas:
       Aoife would tag along with her. She\u2019s trying to figure out what she wants
       to do with herself, and Cait was showing her what ecologists do. That must\u2019ve
-      been why they were there.\r\n\n"
+      been why they were there.\r"
 --- !u!114 &74812012
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1043,7 +1046,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1272588197}
 --- !u!114 &74812015
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1083,7 +1086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 176
   indentLevel: 0
-  storyText: "Cait\u2019s parents. They might be able to confirm his story about Cait
+  storyText: "Cait\u2019s mother. She might be able to confirm his story about Cait
     and Aoife\u2019s habits.\r\n"
   description: 
   character: {fileID: 0}
@@ -1096,7 +1099,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1272588197}
 --- !u!114 &74812017
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1139,7 +1142,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1272588197}
 --- !u!114 &74812019
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1176,9 +1179,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 773.4999
-    y: 191.9349
-    width: 186.28615
+    x: 760.3959
+    y: 160.8129
+    width: 159.50055
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1202,9 +1205,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 765.6162
-    y: 277.07495
-    width: 202.18619
+    x: 757.4262
+    y: 244.31494
+    width: 172.38297
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1227,9 +1230,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 205
-  indentLevel: 0
-  text: Talk to Constable Byrne to confirm Cait and Aoife entering and leaving the
-    forest.
+  indentLevel: 1
+  text: (Talk to Constable Byrne to confirm Cait and Aoife entering and leaving the
+    forest.)
   description: 
   targetBlock: {fileID: 74812021}
   hideIfVisited: 0
@@ -1252,8 +1255,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 204
-  indentLevel: 0
-  text: "Talk to Cait\u2019s parents to confirm Cait and Aoife\u2019s habits."
+  indentLevel: 1
+  text: "(Talk to Cait\u2019s parents to confirm Cait and Aoife\u2019s habits.)"
   description: 
   targetBlock: {fileID: 74812020}
   hideIfVisited: 0
@@ -1289,7 +1292,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1272588197}
 --- !u!114 &74812025
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1372,7 +1375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 74812041}
-  clickableObject: {fileID: 0}
+  clickableObject: {fileID: 905348965}
   waitFrames: 1
 --- !u!114 &74812030
 MonoBehaviour:
@@ -1401,9 +1404,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -229.4931
-    y: 276.6352
-    width: 314.62225
+    x: -217.9657
+    y: 249.73792
+    width: 262.5599
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1414,6 +1417,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 74811998}
   - {fileID: 74811997}
+  - {fileID: 74812055}
   - {fileID: 74812032}
   - {fileID: 74812010}
   - {fileID: 74812009}
@@ -1613,7 +1617,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 451.77405
     y: 157.74515
-    width: 148.80746
+    width: 130.5151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1719,9 +1723,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 782.95984
-    y: 376.40475
-    width: 246.47919
+    x: 742.0098
+    y: 328.90274
+    width: 207.80962
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1748,9 +1752,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 557.4968
-    y: 239.23488
-    width: 176.06468
+    x: 555.8588
+    y: 245.78688
+    width: 153.05936
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1759,8 +1763,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812057}
   - {fileID: 74812023}
   - {fileID: 74812022}
+  - {fileID: 74812056}
   - {fileID: 74812036}
   - {fileID: 74812044}
   - {fileID: 74812043}
@@ -1907,6 +1913,75 @@ MonoBehaviour:
     stringVal: TheEye6
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &74812055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 261
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1510711721}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d7f1c6f1f5e76ba4a95c03324521ff03, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 751303503}
+  facing: 2
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &74812056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 263
+  indentLevel: 0
+--- !u!114 &74812057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 262
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 74812030}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &74812115
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6551,6 +6626,12 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1393455034}
+--- !u!114 &1510711721 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114760724959083114, guid: e4f9592aa10b6074c93f9a8bd9e7cceb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1822347120}
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!1 &1541939209
 GameObject:
   m_ObjectHideFlags: 0
