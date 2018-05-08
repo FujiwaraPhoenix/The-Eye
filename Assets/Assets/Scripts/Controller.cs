@@ -8,6 +8,12 @@ public class Controller : MonoBehaviour {
     public static Controller cont;
     public Clickable2D c2d;
     public int eyeUsedCounter;
+
+	//Bools to check if you've passed certain parts of a given conversation
+	public bool spokeToColleen;
+	public bool colleenConfessed;
+	public bool spokeToEllen;
+
 	// Use this for initialization
     public void getCurrentMap()
     {

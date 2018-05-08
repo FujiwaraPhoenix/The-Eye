@@ -573,6 +573,7 @@ GameObject:
   - component: {fileID: 74812052}
   - component: {fileID: 74812051}
   - component: {fileID: 74812045}
+  - component: {fileID: 74812054}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -593,11 +594,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -322.57343, y: -128.86841}
+  scrollPos: {x: -534.626, y: -83.653534}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 313
-  zoom: 0.63425004
+  zoom: 0.8805004
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -605,8 +606,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812041}
-  selectedCommands: []
+  - {fileID: 74812021}
+  selectedCommands:
+  - {fileID: 74812028}
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
@@ -739,7 +741,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.60712
     y: 297.5715
-    width: 146.17657
+    width: 165.84323
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -765,7 +767,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.90704
     y: 190.3584
-    width: 143.02325
+    width: 157.89319
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -811,7 +813,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 382.48685
     y: 245.54172
-    width: 136.71658
+    width: 151.07889
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1176,7 +1178,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 773.4999
     y: 191.9349
-    width: 165.09656
+    width: 186.28615
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1202,7 +1204,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 765.6162
     y: 277.07495
-    width: 177.70988
+    width: 202.18619
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1303,8 +1305,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Anna: \u201CPerhaps I should be going.\u201D\r\nThomas: \u201CPerhaps
-      you should. We\u2019ll be here if you have any more you\u2019d like to...discuss.\u201D\r\n"
+    stringVal: "Anna: Perhaps I should be going.\r\nThomas: Perhaps you should. We\u2019ll
+      be here if you have any more you\u2019d like to...discuss.\r\n"
 --- !u!114 &74812026
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1356,8 +1358,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Anna: \u201CPerhaps I should be going.\u201D\r\nThomas: \u201CPerhaps
-      you should. We\u2019ll be here if you have any more you\u2019d like to...discuss.\u201D\r\n"
+    stringVal: "Anna: Perhaps I should be going.\r\nThomas: Perhaps you should. We\u2019ll
+      be here if you have any more you\u2019d like to...discuss.\r\n"
 --- !u!114 &74812029
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1401,7 +1403,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -229.4931
     y: 276.6352
-    width: 277.0398
+    width: 314.62225
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1497,7 +1499,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812036
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1611,7 +1613,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 451.77405
     y: 157.74515
-    width: 135.13992
+    width: 148.80746
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1642,7 +1644,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &74812043
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1679,7 +1681,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &74812045
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1719,7 +1721,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 782.95984
     y: 376.40475
-    width: 213.97319
+    width: 246.47919
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1732,6 +1734,7 @@ MonoBehaviour:
   - {fileID: 74812052}
   - {fileID: 74812051}
   - {fileID: 74812045}
+  - {fileID: 74812054}
 --- !u!114 &74812047
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1747,7 +1750,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 557.4968
     y: 239.23488
-    width: 155.63657
+    width: 176.06468
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1827,7 +1830,7 @@ MonoBehaviour:
     booleanVal: 1
 --- !u!114 &74812051
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1845,7 +1848,7 @@ MonoBehaviour:
       come back. Final warning.\r"
 --- !u!114 &74812052
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1871,7 +1874,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &74812053
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1886,6 +1889,24 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "Thomas: Wh-- What? What do you\u2026 how could you possibly\u2026?\r\nAnna:
       She never saw Cait and Aoife leave together, did she?\r\n"
+--- !u!114 &74812054
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 260
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: TheEye6
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &74812115
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6210,6 +6231,9 @@ MonoBehaviour:
   fc: {fileID: 0}
   c2d: {fileID: 0}
   eyeUsedCounter: 0
+  spokeToColleen: 0
+  colleenConfessed: 0
+  spokeToEllen: 0
 --- !u!4 &1325089977
 Transform:
   m_ObjectHideFlags: 0
