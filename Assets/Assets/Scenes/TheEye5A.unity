@@ -576,6 +576,15 @@ GameObject:
   - component: {fileID: 74812049}
   - component: {fileID: 74812056}
   - component: {fileID: 74812055}
+  - component: {fileID: 74812057}
+  - component: {fileID: 74812058}
+  - component: {fileID: 74812059}
+  - component: {fileID: 74812060}
+  - component: {fileID: 74812061}
+  - component: {fileID: 74812063}
+  - component: {fileID: 74812062}
+  - component: {fileID: 74812064}
+  - component: {fileID: 74812065}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -596,7 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -1290.6157, y: -165.56787}
+  scrollPos: {x: -1587.0236, y: -192.51404}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 273
@@ -608,13 +617,16 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812035}
-  selectedCommands: []
+  - {fileID: 74812056}
+  selectedCommands:
+  - {fileID: 74812055}
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
   - {fileID: 74812115}
   - {fileID: 74812048}
+  - {fileID: 74812060}
+  - {fileID: 74812065}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -1451,6 +1463,7 @@ MonoBehaviour:
   eventHandler: {fileID: 74812033}
   commandList:
   - {fileID: 74811998}
+  - {fileID: 74812061}
   - {fileID: 74811999}
   - {fileID: 74811997}
   - {fileID: 74812016}
@@ -1535,8 +1548,11 @@ MonoBehaviour:
   commandList:
   - {fileID: 74812041}
   - {fileID: 74812040}
+  - {fileID: 74812063}
   - {fileID: 74812054}
+  - {fileID: 74812062}
   - {fileID: 74812053}
+  - {fileID: 74812064}
 --- !u!114 &74812036
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1614,6 +1630,7 @@ MonoBehaviour:
   - {fileID: 74812044}
   - {fileID: 74812052}
   - {fileID: 74812051}
+  - {fileID: 74812057}
 --- !u!114 &74812039
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1869,8 +1886,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 2030.1367
-    y: 307.78345
+    x: 2018.1611
+    y: 271.85526
     width: 121.85629
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1880,6 +1897,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812058}
   - {fileID: 74812049}
 --- !u!114 &74812051
 MonoBehaviour:
@@ -1965,7 +1983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 208
-  indentLevel: 0
+  indentLevel: 1
   text: Talk to Cait's parents
   description: 
   targetBlock: {fileID: 74812050}
@@ -2019,7 +2037,167 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812059}
   - {fileID: 74812055}
+--- !u!114 &74812057
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 216
+  indentLevel: 0
+  variable: {fileID: 0}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812058
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 217
+  indentLevel: 0
+  targetObject: {fileID: 615950075}
+  methodName: ColleenCallController
+  delay: 0
+--- !u!114 &74812059
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 218
+  indentLevel: 0
+  targetObject: {fileID: 615950075}
+  methodName: ColleenCallController
+  delay: 0
+--- !u!114 &74812060
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: spokeToEllen
+  value: 0
+--- !u!114 &74812061
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 219
+  indentLevel: 0
+  targetObject: {fileID: 615950075}
+  methodName: EllenUpdateCounter
+  delay: 0
+--- !u!114 &74812062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 221
+  indentLevel: 0
+--- !u!114 &74812063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 220
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 74812060}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 222
+  indentLevel: 0
+  targetObject: {fileID: 615950075}
+  methodName: ColleenConfessionCallController
+  delay: 0
+--- !u!114 &74812065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: colleenConfessed
+  value: 0
 --- !u!114 &74812115
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3528,6 +3706,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029d8277a03a68e438af62188d2d8981, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &615950075 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1114502656300740, guid: 029d8277a03a68e438af62188d2d8981,
+    type: 2}
+  m_PrefabInternal: {fileID: 615950074}
 --- !u!1 &626905017
 GameObject:
   m_ObjectHideFlags: 0
@@ -6314,6 +6497,9 @@ MonoBehaviour:
   fc: {fileID: 0}
   c2d: {fileID: 0}
   eyeUsedCounter: 0
+  spokeToColleen: 0
+  colleenConfessed: 0
+  spokeToEllen: 0
 --- !u!4 &1325089977
 Transform:
   m_ObjectHideFlags: 0

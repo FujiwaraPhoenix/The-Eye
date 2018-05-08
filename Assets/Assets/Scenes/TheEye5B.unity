@@ -578,6 +578,12 @@ GameObject:
   - component: {fileID: 74812053}
   - component: {fileID: 74812057}
   - component: {fileID: 74812058}
+  - component: {fileID: 74812059}
+  - component: {fileID: 74812060}
+  - component: {fileID: 74812062}
+  - component: {fileID: 74812061}
+  - component: {fileID: 74812063}
+  - component: {fileID: 74812064}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -598,11 +604,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -440.2209, y: -156.89859}
+  scrollPos: {x: -376.7112, y: -72.17971}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 330
-  zoom: 1
+  zoom: 0.79625
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -610,9 +616,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812044}
-  selectedCommands:
-  - {fileID: 74812055}
+  - {fileID: 74812054}
+  selectedCommands: []
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
@@ -620,6 +625,8 @@ MonoBehaviour:
   - {fileID: 74812018}
   - {fileID: 74812017}
   - {fileID: 74812016}
+  - {fileID: 74812059}
+  - {fileID: 74812063}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -795,7 +802,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 130.94055
     y: 276.2282
-    width: 230
+    width: 249.68604
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -865,7 +872,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.94055
     y: 227.22823
-    width: 242
+    width: 264.75668
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -903,7 +910,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.94055
     y: 331.2282
-    width: 295
+    width: 314.99216
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1426,7 +1433,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -229.4931
     y: 276.6352
-    width: 248
+    width: 271.03613
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1436,6 +1443,7 @@ MonoBehaviour:
   eventHandler: {fileID: 74812033}
   commandList:
   - {fileID: 74811998}
+  - {fileID: 74812060}
   - {fileID: 74811997}
   - {fileID: 74811999}
   - {fileID: 74812000}
@@ -1695,7 +1703,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 469.58752
     y: 271.69598
-    width: 245
+    width: 258.47723
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1704,9 +1712,12 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812064}
   - {fileID: 74812043}
   - {fileID: 74812048}
+  - {fileID: 74812062}
   - {fileID: 74812056}
+  - {fileID: 74812061}
   - {fileID: 74812055}
 --- !u!114 &74812045
 MonoBehaviour:
@@ -1920,7 +1931,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 772.2209
     y: 214.89859
-    width: 145
+    width: 154.23862
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1966,7 +1977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 211
-  indentLevel: 0
+  indentLevel: 1
   text: Speak with Constable Byrne
   description: 
   targetBlock: {fileID: 74812054}
@@ -1993,7 +2004,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 792.2209
     y: 282.8986
-    width: 150
+    width: 163.02983
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2021,6 +2032,106 @@ MonoBehaviour:
     stringVal: TheEye5C
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &74812059
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: spokeToColleen
+  value: 0
+--- !u!114 &74812060
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 217
+  indentLevel: 0
+  targetObject: {fileID: 615950075}
+  methodName: ColleenUpdateCounter
+  delay: 0
+--- !u!114 &74812061
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 219
+  indentLevel: 0
+--- !u!114 &74812062
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 218
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 74812059}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: spokeToEllen
+  value: 0
+--- !u!114 &74812064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 220
+  indentLevel: 0
+  targetObject: {fileID: 615950075}
+  methodName: EllenCallController
+  delay: 0
 --- !u!114 &74812115
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3577,6 +3688,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029d8277a03a68e438af62188d2d8981, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &615950075 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1114502656300740, guid: 029d8277a03a68e438af62188d2d8981,
+    type: 2}
+  m_PrefabInternal: {fileID: 615950074}
 --- !u!1 &676876937
 GameObject:
   m_ObjectHideFlags: 0
@@ -6388,6 +6504,8 @@ MonoBehaviour:
   fc: {fileID: 0}
   c2d: {fileID: 0}
   eyeUsedCounter: 0
+  spokeToColleen: 0
+  spokeToEllen: 0
 --- !u!4 &1325089977
 Transform:
   m_ObjectHideFlags: 0
