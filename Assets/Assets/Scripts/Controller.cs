@@ -8,6 +8,12 @@ public class Controller : MonoBehaviour {
     public static Controller cont;
     public Clickable2D c2d;
     public int eyeUsedCounter;
+
+	//Bools to check if you've passed certain parts of a given conversation
+	public bool spokeToColleen;
+	public bool colleenConfessed;
+	public bool spokeToEllen;
+
 	// Use this for initialization
     public void getCurrentMap()
     {
@@ -19,6 +25,7 @@ public class Controller : MonoBehaviour {
             c2d = eye.GetComponent<Clickable2D>();
         }
     }
+	//}
 
     void Awake()
     {
@@ -35,11 +42,7 @@ public class Controller : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (fc != null)
-        {
-            eyeUsedCounter = fc.GetIntegerVariable("eyeUsedCounter");
-        }
-        else
+        if (fc == null)
         {
             getCurrentMap();
         }
@@ -49,5 +52,13 @@ public class Controller : MonoBehaviour {
             SpriteRenderer sr = c2d.GetComponent<SpriteRenderer>();
             sr.enabled = !tempBool;
         }
+    }
+
+    void addEyeUse()
+    {
+        getCurrentMap();
+        eyeUsedCounter++;
+        fc.SetIntegerVariable("eyeUsedCounter", eyeUsedCounter);
+        Debug.Log("called!");
     }
 }
