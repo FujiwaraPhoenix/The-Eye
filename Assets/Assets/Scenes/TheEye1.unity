@@ -592,6 +592,8 @@ GameObject:
   - component: {fileID: 74812070}
   - component: {fileID: 74812072}
   - component: {fileID: 74812073}
+  - component: {fileID: 74812075}
+  - component: {fileID: 74812074}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -612,11 +614,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -32.675774, y: 251.94812}
+  scrollPos: {x: -504.42212, y: 15.205438}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 232
-  zoom: 0.3100001
+  zoom: 0.67899996
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -624,9 +626,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812008}
+  - {fileID: 74812042}
   selectedCommands:
-  - {fileID: 74812032}
+  - {fileID: 74812074}
   variables:
   - {fileID: 74811997}
   description: 
@@ -668,7 +670,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 213.33533
     y: 93.82977
-    width: 169.3548
+    width: 167.82033
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -905,7 +907,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 183.21687
     y: 165.1461
-    width: 230.64511
+    width: 231.14876
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -988,7 +990,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 613027383}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d7f1c6f1f5e76ba4a95c03324521ff03, type: 3}
+  portrait: {fileID: 21300000, guid: 87c50945539fe6846858c13509419f2a, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 751303503}
@@ -1042,7 +1044,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25.86322
     y: -53.787125
-    width: 201.61285
+    width: 200.22092
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1246,7 +1248,7 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Siobhan: Yeah, I get that. You should\u2019ve seen me when I flew
-      in. I was kind of a mess.\n\nAnna: You? Never.\u201D\n\nSiobhan: Shut up."
+      in. I was kind of a mess.\n\nAnna: You? Never.\n\nSiobhan: Shut up."
 --- !u!114 &74812022
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1702,7 +1704,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 777.1112
     y: 251.70511
-    width: 137.09674
+    width: 133.94699
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1752,7 +1754,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 979.01764
     y: 161.46783
-    width: 159.67738
+    width: 158.9838
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1762,6 +1764,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 74812064}
+  - {fileID: 74812075}
+  - {fileID: 74812074}
   - {fileID: 74812063}
   - {fileID: 74812062}
   - {fileID: 74812061}
@@ -1956,15 +1960,15 @@ MonoBehaviour:
       a girl in town\u2019s gone missing. Her name\u2019s Cait, Cait Healy. Actually,
       she\u2019s one of my secondary students.\n\nAnna: Anyone who would want to make
       her disappear?\n\nSiobhan: No, no one I can think of. She was well-liked in
-      town, especially by Aoife, the Chief Inspector\u2019s daughter.\n\nAnna: \u201CSo
-      the police should be all over this, then.\u201D\r\n\nSiobhan: \u201CThey gave
-      up about a day or two ago. That\u2019s why I called you.\u201D\r\n\nAnna: \u201CRight.
-      Well, I\u2019ll have to start somewhere.\u201D\r\n\nSiobhan: \u201CI suppose
-      you could talk to Aoife or her father, the Chief Inspector. She was close to
-      Cait, and he was investigating the whole thing for a little while. Besides,
-      you could probably find them under the same roof anyway.\u201D\r\n\nAnna: \u201CGot
-      it. Thanks, Sib.\u201D\r\n\nSiobhan: \u201CSure. Thanks for coming all this
-      way. Anyway, you should probably get some sleep. You look racked.\u201D\r"
+      town, especially by Aoife, the Chief Inspector\u2019s daughter.\n\nAnna: So
+      the police should be all over this, then.\n\nSiobhan: They gave up about a day
+      or two ago. That\u2019s why I called you.\r\n\nAnna: Right. Well, I\u2019ll
+      have to start somewhere.\r\n\nSiobhan: I suppose you could talk to Aoife or
+      her father, the Chief Inspector. She was close to Cait, and he was investigating
+      the whole thing for a little while. \n\nSiobhan: Besides, you could probably
+      find them under the same roof anyway.\r\n\nAnna: Got it. Thanks, Sib.\r\n\nSiobhan:
+      Sure. Thanks for coming all this way. Anyway, you should probably get some sleep.
+      You look racked."
 --- !u!114 &74812051
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2020,7 +2024,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 458.5316
     y: -10.878963
-    width: 156.45158
+    width: 151.62003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2282,9 +2286,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "Oh, how haven\u2019t they reacted? The whole thing\u2019s spread like
     you wouldn\u2019t believe. Some people are having fits worrying that their kids
-    will be next. But what really gets you is the ones who talk about Cait being new
-    in town. They ask if maybe she did something to get herself in trouble because
-    she didn\u2019t know better. It\u2019s just\u2026"
+    will be next."
   description: 
   character: {fileID: 358163474}
   portrait: {fileID: 0}
@@ -2314,7 +2316,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 358163474}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: cce8a8d2998117e4bb4ff411f923f93d, type: 3}
+  portrait: {fileID: 21300000, guid: f5c70c694a00ef0439f976cab2750f90, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 315665520}
@@ -2339,7 +2341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 100
   indentLevel: 0
-  storyText: "Oh, forget it. First time in years we\u2019re in the same room, we\u2019re
+  storyText: "Oh, forget it. First time in years we\u2019re in the same room and we\u2019re
     already getting into it. I should be letting you get some rest."
   description: 
   character: {fileID: 358163474}
@@ -2394,7 +2396,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 223.53159
     y: 19.12106
-    width: 204.83867
+    width: 207.58469
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2520,6 +2522,60 @@ MonoBehaviour:
   storyText: "Can\u2019t imagine what she\u2019s going through right about now.\r"
   description: 
   character: {fileID: 358163474}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 115
+  indentLevel: 0
+  storyText: "They ask if maybe she did something to get herself in trouble because
+    she didn\u2019t know better. It\u2019s just\u2026"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 114
+  indentLevel: 0
+  storyText: But what really gets you is the ones who talk about Cait being new in
+    town.
+  description: 
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3546,7 +3602,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: cce8a8d2998117e4bb4ff411f923f93d, type: 3}
+  - {fileID: 21300000, guid: f5c70c694a00ef0439f976cab2750f90, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 56276440}
   description: 
@@ -3598,6 +3654,115 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &424207601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 424207603}
+  - component: {fileID: 424207602}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &424207602
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 424207601}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b5305a0cb56108d49bd3c8c2f97ee206, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &424207603
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 424207601}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.813482, y: 1.5773985, z: 5.346822}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &445111989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3806,7 +3971,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: d7f1c6f1f5e76ba4a95c03324521ff03, type: 3}
+  - {fileID: 21300000, guid: 87c50945539fe6846858c13509419f2a, type: 3}
   - {fileID: 0}
   portraitsFace: 2
   setSayDialog: {fileID: 1272588197}

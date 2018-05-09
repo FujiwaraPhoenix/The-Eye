@@ -602,6 +602,7 @@ GameObject:
   - component: {fileID: 74812081}
   - component: {fileID: 74812069}
   - component: {fileID: 74812082}
+  - component: {fileID: 74812083}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -622,7 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 191.23598, y: -106.57196}
+  scrollPos: {x: 637.3899, y: -125.80272}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 387
@@ -634,9 +635,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812015}
+  - {fileID: 74812031}
   selectedCommands:
-  - {fileID: 74812069}
+  - {fileID: 74812083}
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
@@ -1386,6 +1387,7 @@ MonoBehaviour:
   eventHandler: {fileID: 74812033}
   commandList:
   - {fileID: 74812012}
+  - {fileID: 74812083}
   - {fileID: 74812025}
   - {fileID: 74812027}
   - {fileID: 74812026}
@@ -2518,6 +2520,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 280
   indentLevel: 0
+--- !u!114 &74812083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 281
+  indentLevel: 0
+  targetObject: {fileID: 615950075}
+  methodName: UpdateCounter
+  delay: 0
 --- !u!114 &74812115
 MonoBehaviour:
   m_ObjectHideFlags: 2

@@ -566,6 +566,7 @@ GameObject:
   - component: {fileID: 74812008}
   - component: {fileID: 74812003}
   - component: {fileID: 74811999}
+  - component: {fileID: 74812009}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -598,9 +599,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812086}
+  - {fileID: 74812011}
   selectedCommands:
-  - {fileID: 74812097}
+  - {fileID: 74812069}
   variables:
   - {fileID: 74811997}
   description: 
@@ -843,7 +844,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "I want nothing more than to be asleep. On top of that my back still
     hurts from the flight, I\u2019m sweaty from putting on too many wool blankets,
-    and the back of my hand itches. Frankly, I\u2019ve earned the right to gripe."
+    and the back of my hand itches."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -911,6 +912,32 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &74812009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 147
+  indentLevel: 0
+  storyText: "Frankly, I\u2019ve earned the right to gripe."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &74812010
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1135,6 +1162,7 @@ MonoBehaviour:
   - {fileID: 74812007}
   - {fileID: 74812002}
   - {fileID: 74812006}
+  - {fileID: 74812009}
   - {fileID: 74812004}
   - {fileID: 74811998}
   - {fileID: 74812001}
@@ -1180,7 +1208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 114
   indentLevel: 0
-  storyText: "I look down on it. There\u2019s...an eye."
+  storyText: "I look down on my hand. There\u2019s...an eye."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2847,7 +2875,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: cce8a8d2998117e4bb4ff411f923f93d, type: 3}
+  - {fileID: 0}
   portraitsFace: 1
   setSayDialog: {fileID: 56276440}
   description: 
@@ -3109,7 +3137,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: d7f1c6f1f5e76ba4a95c03324521ff03, type: 3}
+  - {fileID: 21300000, guid: 87c50945539fe6846858c13509419f2a, type: 3}
   - {fileID: 0}
   portraitsFace: 2
   setSayDialog: {fileID: 1272588197}

@@ -521,7 +521,6 @@ GameObject:
   - component: {fileID: 74812006}
   - component: {fileID: 74811998}
   - component: {fileID: 74812010}
-  - component: {fileID: 74812009}
   - component: {fileID: 74812007}
   - component: {fileID: 74812013}
   - component: {fileID: 74812026}
@@ -559,6 +558,25 @@ GameObject:
   - component: {fileID: 74812028}
   - component: {fileID: 74812029}
   - component: {fileID: 74812030}
+  - component: {fileID: 74812031}
+  - component: {fileID: 74812033}
+  - component: {fileID: 74812032}
+  - component: {fileID: 74812035}
+  - component: {fileID: 74812034}
+  - component: {fileID: 74812043}
+  - component: {fileID: 74812039}
+  - component: {fileID: 74812036}
+  - component: {fileID: 74812038}
+  - component: {fileID: 74812045}
+  - component: {fileID: 74812044}
+  - component: {fileID: 74812048}
+  - component: {fileID: 74812047}
+  - component: {fileID: 74812051}
+  - component: {fileID: 74812046}
+  - component: {fileID: 74812053}
+  - component: {fileID: 74812052}
+  - component: {fileID: 74812009}
+  - component: {fileID: 74812055}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -579,23 +597,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 132.58865, y: -144.3494}
+  scrollPos: {x: 117.81747, y: -50.878452}
   variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 1
+  variablesExpanded: 0
   blockViewHeight: 289
-  zoom: 0.7000003
+  zoom: 0.8305001
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 74812004}
   selectedCommands: []
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
   - {fileID: 74812115}
+  - {fileID: 74812036}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -721,15 +741,15 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Anna: You\u2019re lying.\r\nEthan: What?\r\nAnna: You\u2019re keeping
-      something from me. Do I need to remind you that a girl\u2019s life is on the
-      line here? If you want to keep me from finding out what happened then I\u2019m
-      liable to report you to the Chief Inspector as a possible suspect! Is that what
-      you want!?\r\nEthan: No! I\u2026 Listen, I really didn\u2019t see them. I was
-      taking my break at the front counter, so I would have seen if they walked by.
-      Whatever happened, I had nothing to do with it.\r\nThe Eye: He speaks the truth.\r\nAnna:
-      (Then Aoife\u2019s story doesn\u2019t add up.) \nAnna: Alright then. Thank you
-      for your help."
+    stringVal: "Ethan: What?\r\nAnna: You\u2019re keeping something from me. Do I
+      need to remind you that a girl\u2019s life is on the line here? If you want
+      to keep me from finding out what happened then I\u2019m liable to report you
+      to the Chief Inspector as a possible suspect! Is that what you want!?\r\nEthan:
+      No! I\u2026 Listen, I really didn\u2019t see them. I was taking my break at
+      the front counter, so I would have seen if they walked by. Whatever happened,
+      I had nothing to do with it.\r\nThe Eye: He speaks the truth.\r\nAnna: (Then
+      Aoife\u2019s story doesn\u2019t add up.) \nAnna: Alright then. Thank you for
+      your help."
 --- !u!114 &74812002
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -754,6 +774,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812038}
   - {fileID: 74812001}
   - {fileID: 74812028}
 --- !u!114 &74812003
@@ -786,7 +807,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -59.748104
     y: 178.12157
-    width: 134.28568
+    width: 137.89883
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -796,13 +817,17 @@ MonoBehaviour:
   eventHandler: {fileID: 74812003}
   commandList:
   - {fileID: 74812049}
+  - {fileID: 74812055}
   - {fileID: 74812006}
+  - {fileID: 74812031}
   - {fileID: 74811998}
   - {fileID: 74812010}
   - {fileID: 74812009}
   - {fileID: 74812007}
   - {fileID: 74812117}
   - {fileID: 74812037}
+  - {fileID: 74812033}
+  - {fileID: 74812032}
   - {fileID: 74811999}
   - {fileID: 74812012}
   - {fileID: 74812015}
@@ -833,8 +858,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 0
   storyText: Most of the buildings around here feel older than me, but the antique
-    shop feels even older than that. Like, older than my parents, at least. Through
-    the window I can see shelves full of strange carvings, statues, and old books.
+    shop feels even older than that. Like, older than my parents, at least.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -865,7 +889,7 @@ MonoBehaviour:
     stringVal: "Ethan: Dia dhuit!\r\nAnna: Excuse me?\r\nEthan: You're new here, I
       take it?\r\nAnna: Yeah.\r\nEthan: When someone says Dia Dhuit, the normal response
       is Dia is Muire dhuit.\r\nAnna: Jee-uh is mwir-uh gwitch?\r\nEthan: It means
-      \"God and Mary to you\". It's a greeting.\r\nAnna: Ah, I see.\r\nEthan: So,
+      \"God and Mary to you.\" It's a greeting.\r\nAnna: Ah, I see.\r\nEthan: So,
       welcome! What are you looking for? Antiques? Relics? There's some nice jewelry
       here that actually has a really interesting history-\r\nAnna: Actually, I'm
       looking into the disappearance of Cait Healy.\r\nEthan: Ah... "
@@ -881,7 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 130
-  indentLevel: 0
+  indentLevel: 2
   text: Alright, thank you for your time.
   description: 
   targetBlock: {fileID: 74812000}
@@ -895,19 +919,33 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &74812009
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 10
+  itemId: 172
   indentLevel: 0
-  commenterName: Add Ethan port. here.
-  commentText: 
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1036977558}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: bed01122d68cb084092dece58aacabd7, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 315665520}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!114 &74812010
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -925,7 +963,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 613027383}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d7f1c6f1f5e76ba4a95c03324521ff03, type: 3}
+  portrait: {fileID: 0}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 751303503}
@@ -961,9 +999,13 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 74812008}
+  - {fileID: 74812035}
   - {fileID: 74812023}
   - {fileID: 74812022}
+  - {fileID: 74812043}
+  - {fileID: 74812008}
+  - {fileID: 74812039}
+  - {fileID: 74812034}
   - {fileID: 74812021}
   - {fileID: 74812020}
   - {fileID: 74812018}
@@ -1022,7 +1064,11 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812051}
+  - {fileID: 74812046}
   - {fileID: 74811997}
+  - {fileID: 74812048}
+  - {fileID: 74812047}
   - {fileID: 74812027}
 --- !u!114 &74812015
 MonoBehaviour:
@@ -1122,7 +1168,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.1255
     y: 171.49225
-    width: 124.28568
+    width: 128.26608
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1131,7 +1177,11 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 74812053}
+  - {fileID: 74812052}
   - {fileID: 74812017}
+  - {fileID: 74812045}
+  - {fileID: 74812044}
   - {fileID: 74812016}
 --- !u!114 &74812020
 MonoBehaviour:
@@ -1196,7 +1246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 144
-  indentLevel: 0
+  indentLevel: 1
   text: Do you know anything about spooky talking eyes?
   description: 
   targetBlock: {fileID: 74812019}
@@ -1220,7 +1270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 143
-  indentLevel: 0
+  indentLevel: 1
   text: How well did you know Cait?
   description: 
   targetBlock: {fileID: 74812014}
@@ -1368,6 +1418,139 @@ MonoBehaviour:
     stringVal: TheEye5
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &74812031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 156
+  indentLevel: 0
+  storyText: Through the window I can see shelves full of strange carvings, statues,
+    and old books.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 158
+  indentLevel: 0
+  storyText: Evasive eyes. A nervous countenance. This one is hiding something.
+  description: 
+  character: {fileID: 1238509849}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 157
+  indentLevel: 0
+  storyText: Probably?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 160
+  indentLevel: 0
+--- !u!114 &74812035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 159
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 74812013}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: ethanConfessed
+  value: 0
 --- !u!114 &74812037
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1385,9 +1568,47 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "Anna: I was told that Cait stopped by here with Aoife O'Callaghan
       on the day she disappeared? Around 2pm? Is that correct?\r\nEthan: Around 2
-      I'm usually on break. If they stopped by then I probably didn't see them.\r\nAnna:
-      (Probably?)\nThe Eye: Evasive eyes. A nervous countenance. This one is hiding
-      something."
+      I'm usually on break. If they stopped by then I probably didn't see them.\r"
+--- !u!114 &74812038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 163
+  indentLevel: 0
+  variable: {fileID: 74812036}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 162
+  indentLevel: 1
 --- !u!114 &74812040
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1443,6 +1664,138 @@ MonoBehaviour:
   scope: 1
   key: hideEye
   value: 0
+--- !u!114 &74812043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 161
+  indentLevel: 1
+  compareOperator: 0
+  variable: {fileID: 74812036}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 165
+  indentLevel: 0
+  targetClickable2D: {fileID: 905348965}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &74812045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 164
+  indentLevel: 0
+  variable: {fileID: 74812042}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 169
+  indentLevel: 0
+  targetClickable2D: {fileID: 905348965}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &74812047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 167
+  indentLevel: 0
+  targetClickable2D: {fileID: 905348965}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &74812048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 166
+  indentLevel: 0
+  variable: {fileID: 74812042}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &74812049
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1490,6 +1843,77 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &74812051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 168
+  indentLevel: 0
+  variable: {fileID: 74812042}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &74812052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 171
+  indentLevel: 0
+  targetClickable2D: {fileID: 905348965}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &74812053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 170
+  indentLevel: 0
+  variable: {fileID: 74812042}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &74812054
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1503,6 +1927,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 46
   indentLevel: 0
+--- !u!114 &74812055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 218
+  indentLevel: 0
+  targetObject: {fileID: 1057361806}
+  methodName: UpdateCounter
+  delay: 0
 --- !u!114 &74812073
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3955,9 +4395,10 @@ MonoBehaviour:
   nameText: Ethan
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  portraits:
+  - {fileID: 21300000, guid: bed01122d68cb084092dece58aacabd7, type: 3}
+  portraitsFace: 1
+  setSayDialog: {fileID: 1596669334}
   description: 
 --- !u!4 &1036977559
 Transform:
@@ -4142,7 +4583,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -4533,7 +4974,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f652f5b4be0ed254a990a31f76c85c38, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f83469babe4ddc7488addec324086fc5, type: 3}
   m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5433,7 +5874,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -5886,6 +6327,9 @@ MonoBehaviour:
   fc: {fileID: 0}
   c2d: {fileID: 0}
   eyeUsedCounter: 0
+  spokeToColleen: 0
+  colleenConfessed: 0
+  spokeToEllen: 0
 --- !u!4 &1325089977
 Transform:
   m_ObjectHideFlags: 0
@@ -6347,7 +6791,7 @@ GameObject:
   - component: {fileID: 1596669331}
   - component: {fileID: 1596669330}
   m_Layer: 5
-  m_Name: TomTextbox
+  m_Name: EthanTextbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6421,7 +6865,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

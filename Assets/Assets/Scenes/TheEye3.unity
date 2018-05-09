@@ -500,7 +500,7 @@ RectTransform:
   m_Children:
   - {fileID: 357703891}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -645,6 +645,10 @@ GameObject:
   - component: {fileID: 74812126}
   - component: {fileID: 74812124}
   - component: {fileID: 74812125}
+  - component: {fileID: 74812127}
+  - component: {fileID: 74812128}
+  - component: {fileID: 74812129}
+  - component: {fileID: 74812130}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -665,7 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -35.268322, y: -118.44108}
+  scrollPos: {x: 17.775091, y: -0.7982168}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 222
@@ -677,9 +681,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74811999}
+  - {fileID: 74812027}
   selectedCommands:
-  - {fileID: 74812067}
+  - {fileID: 74812130}
   variables:
   - {fileID: 74811997}
   - {fileID: 74812014}
@@ -769,6 +773,7 @@ MonoBehaviour:
   - {fileID: 74812070}
   - {fileID: 74812124}
   - {fileID: 74812126}
+  - {fileID: 74812127}
   - {fileID: 74812125}
   - {fileID: 74812069}
   - {fileID: 74812068}
@@ -812,6 +817,7 @@ MonoBehaviour:
   - {fileID: 74812048}
   - {fileID: 74812052}
   - {fileID: 74812015}
+  - {fileID: 74812128}
   - {fileID: 74812021}
   - {fileID: 74812020}
   - {fileID: 74812019}
@@ -1002,7 +1008,7 @@ MonoBehaviour:
       Eye: Answerer, this is where I can help. Use my power."
 --- !u!114 &74812009
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1013,7 +1019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 136
   indentLevel: 0
-  storyText: 'The Eye: Come on, Annabelle, just give me a try.'
+  storyText: Come on, Annabelle, just give me a try.
   description: 
   character: {fileID: 1238509849}
   portrait: {fileID: 0}
@@ -1224,7 +1230,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1426929228}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: cfea2a77bec415e44976c420f9001006, type: 3}
+  portrait: {fileID: 21300000, guid: d7ec1a1aa1231ba47a3aefe2e45add11, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 315665520}
@@ -1446,9 +1452,11 @@ MonoBehaviour:
   - {fileID: 74812114}
   - {fileID: 74812094}
   - {fileID: 74812093}
+  - {fileID: 74812130}
   - {fileID: 74812086}
   - {fileID: 74812085}
   - {fileID: 74812083}
+  - {fileID: 74812129}
   - {fileID: 74812084}
 --- !u!114 &74812028
 MonoBehaviour:
@@ -2083,11 +2091,11 @@ MonoBehaviour:
       know?\r\nAnna: Let\u2019s just say that Siobhan and I were more than friends.
       Just tell me the truth.\r\nAoife: Well, she moved here with her mother around
       5 years ago. I didn\u2019t really know how I felt about people back then, but
-      I knew there was something special there. We were going to move out of town
-      and go to college together. I loved her so much, I don\u2019t really know what
-      to do anymore. And don\u2019t tell anyone, these people aren\u2019t too accepting.\r\nAnna:
-      I understand the feeling. I\u2019ll find her tho-\r\nAoife: No you won\u2019t!
-      No one will. Are we done here? I\u2019m leaving.\r"
+      I knew there was something special there. \nAoife: We were going to move out
+      of town and go to college together. I loved her so much, I don\u2019t really
+      know what to do anymore. And don\u2019t tell anyone, these people aren\u2019t
+      too accepting.\r\nAnna: I understand the feeling. I\u2019ll find her tho-\r\nAoife:
+      No you won\u2019t! No one will. Are we done here? I\u2019m leaving.\r"
 --- !u!114 &74812057
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2718,7 +2726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 98
   indentLevel: 1
-  storyText: "Aoife stormed out, crying as she left. She slammed the door on her way
+  storyText: "Aoife storms out, crying as she leaves. She slams the door on her way
     out, and I realize that I\u2019m going to have to check out her story and visit
     this antique shop."
   description: 
@@ -2943,7 +2951,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: "Aoife storms out, crying as she leaves. As she slams the door on her
     way out, I realize that I\u2019m going to have to check out her story and visit
-    this antique shop. But first, I should speak to her father, the Chief Inspector."
+    this antique shop."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3542,7 +3550,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &74812120
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3571,7 +3579,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &74812121
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3597,7 +3605,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1272588197}
 --- !u!114 &74812122
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3624,7 +3632,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812123
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3637,7 +3645,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &74812124
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3664,7 +3672,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812125
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3677,7 +3685,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &74812126
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3692,6 +3700,108 @@ MonoBehaviour:
     like.
   description: 
   character: {fileID: 1674190319}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812127
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 142
+  indentLevel: 1
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 1674190319}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &74812128
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 143
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 1674190319}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &74812129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 144
+  indentLevel: 1
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: TheEye4
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &74812130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 145
+  indentLevel: 1
+  storyText: But first, I should speak to her father, the Chief Inspector.
+  description: 
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3852,7 +3962,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161146797
 GameObject:
@@ -4430,6 +4540,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114235863226386882, guid: 613d2ed0db7491348a76fbdba0c2da43,
+        type: 2}
+      propertyPath: portraits.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4590987369938914, guid: 613d2ed0db7491348a76fbdba0c2da43, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4460,13 +4575,25 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4590987369938914, guid: 613d2ed0db7491348a76fbdba0c2da43, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114235863226386882, guid: 613d2ed0db7491348a76fbdba0c2da43,
         type: 2}
       propertyPath: setSayDialog
       value: 
       objectReference: {fileID: 1151744963}
+    - target: {fileID: 114235863226386882, guid: 613d2ed0db7491348a76fbdba0c2da43,
+        type: 2}
+      propertyPath: portraits.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: d7ec1a1aa1231ba47a3aefe2e45add11,
+        type: 3}
+    - target: {fileID: 114235863226386882, guid: 613d2ed0db7491348a76fbdba0c2da43,
+        type: 2}
+      propertyPath: portraits.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 78bc8db714c3749cc8bd8c0b7e525b85,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 613d2ed0db7491348a76fbdba0c2da43, type: 2}
   m_IsPrefabParent: 0
@@ -5049,7 +5176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &464128595
 GameObject:
@@ -6179,7 +6306,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -6355,7 +6482,7 @@ RectTransform:
   m_Children:
   - {fileID: 1736132361}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7646,7 +7773,7 @@ RectTransform:
   m_Children:
   - {fileID: 22063916}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7937,7 +8064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1334244757
 GameObject:
@@ -8643,7 +8770,7 @@ RectTransform:
   m_Children:
   - {fileID: 1164071577}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9862,7 +9989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4460675341578442, guid: 029d8277a03a68e438af62188d2d8981, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029d8277a03a68e438af62188d2d8981, type: 2}
@@ -9872,50 +9999,3 @@ GameObject:
   m_PrefabParentObject: {fileID: 1114502656300740, guid: 029d8277a03a68e438af62188d2d8981,
     type: 2}
   m_PrefabInternal: {fileID: 2125443025}
---- !u!1001 &2127621916
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4168774171270678, guid: b72d2040ef9d5ed429fc2bab27f2ed96, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4168774171270678, guid: b72d2040ef9d5ed429fc2bab27f2ed96, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4168774171270678, guid: b72d2040ef9d5ed429fc2bab27f2ed96, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4168774171270678, guid: b72d2040ef9d5ed429fc2bab27f2ed96, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4168774171270678, guid: b72d2040ef9d5ed429fc2bab27f2ed96, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4168774171270678, guid: b72d2040ef9d5ed429fc2bab27f2ed96, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4168774171270678, guid: b72d2040ef9d5ed429fc2bab27f2ed96, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4168774171270678, guid: b72d2040ef9d5ed429fc2bab27f2ed96, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114937862589712844, guid: b72d2040ef9d5ed429fc2bab27f2ed96,
-        type: 2}
-      propertyPath: setSayDialog
-      value: 
-      objectReference: {fileID: 56276440}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b72d2040ef9d5ed429fc2bab27f2ed96, type: 2}
-  m_IsPrefabParent: 0

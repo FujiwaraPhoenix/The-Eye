@@ -577,6 +577,7 @@ GameObject:
   - component: {fileID: 74812055}
   - component: {fileID: 74812057}
   - component: {fileID: 74812056}
+  - component: {fileID: 74812058}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -609,9 +610,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812041}
+  - {fileID: 74812031}
   selectedCommands:
-  - {fileID: 74812040}
+  - {fileID: 74812058}
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
@@ -1416,6 +1417,7 @@ MonoBehaviour:
   eventHandler: {fileID: 74812033}
   commandList:
   - {fileID: 74811998}
+  - {fileID: 74812058}
   - {fileID: 74811997}
   - {fileID: 74812055}
   - {fileID: 74812032}
@@ -1982,6 +1984,22 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: 
+--- !u!114 &74812058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 264
+  indentLevel: 0
+  targetObject: {fileID: 615950075}
+  methodName: UpdateCounter
+  delay: 0
 --- !u!114 &74812115
 MonoBehaviour:
   m_ObjectHideFlags: 2
