@@ -324,7 +324,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -585,6 +585,8 @@ GameObject:
   - component: {fileID: 74812063}
   - component: {fileID: 74812064}
   - component: {fileID: 74812065}
+  - component: {fileID: 74812067}
+  - component: {fileID: 74812066}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -605,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 185.92622, y: -151.3006}
+  scrollPos: {x: 440.87125, y: -214.09502}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 330
@@ -619,7 +621,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 74812031}
   selectedCommands:
-  - {fileID: 74812065}
+  - {fileID: 74812066}
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
@@ -996,9 +998,9 @@ MonoBehaviour:
       I was. I\u2019m always out of town.\r\nAnna: Okay. How did she seem at that
       time? Like she was worried about anything? Anything that might\u2019ve had to
       do with her disappearance?\r\nEllen: I don\u2019t know, she seemed alright.
-      I was so caught up with thinking about my flight to Dublin for the Google meeting.
-      I wasn\u2019t even thinking about\u2026 \r\nEllen: That\u2019s it. That\u2019s
-      where I went wrong. What do you need from me to find her?\r"
+      I was so caught up with thinking about my flight to Dublin for the software
+      position interview. I wasn\u2019t even thinking about\u2026 \r\nEllen: That\u2019s
+      it. That\u2019s where I went wrong. What do you need from me to find her?\r"
 --- !u!114 &74812011
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1448,8 +1450,10 @@ MonoBehaviour:
   - {fileID: 74812065}
   - {fileID: 74812060}
   - {fileID: 74811997}
+  - {fileID: 74812067}
   - {fileID: 74811999}
   - {fileID: 74812000}
+  - {fileID: 74812066}
   - {fileID: 74812001}
   - {fileID: 74812004}
   - {fileID: 74812002}
@@ -2151,6 +2155,64 @@ MonoBehaviour:
   targetObject: {fileID: 615950075}
   methodName: UpdateCounter
   delay: 0
+--- !u!114 &74812066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 223
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 89861624}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 99f0851a4e1f0cb4d93bf7cf892b7c79, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 315665520}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &74812067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 222
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1037881977}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f630f159df3f9304f9fe014a96001f47, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 751303503}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!114 &74812115
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2273,9 +2335,10 @@ MonoBehaviour:
   nameText: Ellen
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 99f0851a4e1f0cb4d93bf7cf892b7c79, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1596669334}
   description: 
 --- !u!4 &89861625
 Transform:
@@ -2919,7 +2982,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 226248ac6f184e448af731df91b91958, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c27ebc63d63c1f74a8e1e0810e15dd9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4614,6 +4677,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1037881977 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114760724959083114, guid: e4f9592aa10b6074c93f9a8bd9e7cceb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1822347120}
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!1 &1067005015
 GameObject:
   m_ObjectHideFlags: 0
@@ -4686,6 +4755,115 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1112210872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1112210874}
+  - component: {fileID: 1112210873}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1112210873
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112210872}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 722d673caf41f1d44916c8ed156ac2f5, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &1112210874
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112210872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.813482, y: 1.5773985, z: 5.346822}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1151744958
 GameObject:
@@ -5170,7 +5348,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f652f5b4be0ed254a990a31f76c85c38, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0329fa6386d8c2544b89b0eac313b858, type: 3}
   m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -6070,7 +6248,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -6828,7 +7006,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 226248ac6f184e448af731df91b91958, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c27ebc63d63c1f74a8e1e0810e15dd9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6987,7 +7165,7 @@ GameObject:
   - component: {fileID: 1596669331}
   - component: {fileID: 1596669330}
   m_Layer: 5
-  m_Name: TomTextbox
+  m_Name: EllenTextbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7927,6 +8105,18 @@ Prefab:
       propertyPath: setSayDialog
       value: 
       objectReference: {fileID: 1272588197}
+    - target: {fileID: 114760724959083114, guid: e4f9592aa10b6074c93f9a8bd9e7cceb,
+        type: 2}
+      propertyPath: portraits.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: f630f159df3f9304f9fe014a96001f47,
+        type: 3}
+    - target: {fileID: 114760724959083114, guid: e4f9592aa10b6074c93f9a8bd9e7cceb,
+        type: 2}
+      propertyPath: portraits.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: f119083643cb4e242925e0cd9e5e85dd,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e4f9592aa10b6074c93f9a8bd9e7cceb, type: 2}
   m_IsPrefabParent: 0

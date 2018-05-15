@@ -324,7 +324,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -534,7 +534,6 @@ GameObject:
   - component: {fileID: 74812049}
   - component: {fileID: 74812073}
   - component: {fileID: 74812115}
-  - component: {fileID: 74812117}
   - component: {fileID: 74812037}
   - component: {fileID: 74812011}
   - component: {fileID: 74812008}
@@ -577,6 +576,17 @@ GameObject:
   - component: {fileID: 74812052}
   - component: {fileID: 74812009}
   - component: {fileID: 74812055}
+  - component: {fileID: 74812056}
+  - component: {fileID: 74812057}
+  - component: {fileID: 74812059}
+  - component: {fileID: 74812058}
+  - component: {fileID: 74812060}
+  - component: {fileID: 74812063}
+  - component: {fileID: 74812062}
+  - component: {fileID: 74812061}
+  - component: {fileID: 74812064}
+  - component: {fileID: 74812066}
+  - component: {fileID: 74812065}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -597,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 117.81747, y: -50.878452}
+  scrollPos: {x: 193.67532, y: -14.755638}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 289
@@ -610,7 +620,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 74812004}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 74812055}
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
@@ -742,14 +753,12 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Ethan: What?\r\nAnna: You\u2019re keeping something from me. Do I
-      need to remind you that a girl\u2019s life is on the line here? If you want
-      to keep me from finding out what happened then I\u2019m liable to report you
-      to the Chief Inspector as a possible suspect! Is that what you want!?\r\nEthan:
+      need to remind you that a girl\u2019s life is on the line here? \nAnna: If you
+      want to keep me from finding out what happened then I\u2019m liable to report
+      you to the Chief Inspector as a possible suspect! Is that what you want!?\r\nEthan:
       No! I\u2026 Listen, I really didn\u2019t see them. I was taking my break at
       the front counter, so I would have seen if they walked by. Whatever happened,
-      I had nothing to do with it.\r\nThe Eye: He speaks the truth.\r\nAnna: (Then
-      Aoife\u2019s story doesn\u2019t add up.) \nAnna: Alright then. Thank you for
-      your help."
+      I had nothing to do with it.\r\nThe Eye: He speaks the truth.\r"
 --- !u!114 &74812002
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -775,7 +784,12 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 74812038}
+  - {fileID: 74812058}
+  - {fileID: 74812066}
   - {fileID: 74812001}
+  - {fileID: 74812065}
+  - {fileID: 74812056}
+  - {fileID: 74812057}
   - {fileID: 74812028}
 --- !u!114 &74812003
 MonoBehaviour:
@@ -824,8 +838,12 @@ MonoBehaviour:
   - {fileID: 74812010}
   - {fileID: 74812009}
   - {fileID: 74812007}
-  - {fileID: 74812117}
+  - {fileID: 74812060}
+  - {fileID: 74812063}
+  - {fileID: 74812064}
   - {fileID: 74812037}
+  - {fileID: 74812061}
+  - {fileID: 74812062}
   - {fileID: 74812033}
   - {fileID: 74812032}
   - {fileID: 74811999}
@@ -892,7 +910,7 @@ MonoBehaviour:
       \"God and Mary to you.\" It's a greeting.\r\nAnna: Ah, I see.\r\nEthan: So,
       welcome! What are you looking for? Antiques? Relics? There's some nice jewelry
       here that actually has a really interesting history-\r\nAnna: Actually, I'm
-      looking into the disappearance of Cait Healy.\r\nEthan: Ah... "
+      looking into the disappearance of Cait Healy.\r"
 --- !u!114 &74812008
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -919,7 +937,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &74812009
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -963,7 +981,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 613027383}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f630f159df3f9304f9fe014a96001f47, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 751303503}
@@ -1338,6 +1356,7 @@ MonoBehaviour:
   eventHandler: {fileID: 74812025}
   commandList:
   - {fileID: 74812024}
+  - {fileID: 74812059}
   - {fileID: 74812029}
   - {fileID: 74812073}
   - {fileID: 74812040}
@@ -1420,7 +1439,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &74812031
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1447,7 +1466,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &74812032
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1473,7 +1492,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &74812033
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1499,7 +1518,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &74812034
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1512,7 +1531,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &74812035
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1539,7 +1558,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812036
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1567,11 +1586,10 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Anna: I was told that Cait stopped by here with Aoife O'Callaghan
-      on the day she disappeared? Around 2pm? Is that correct?\r\nEthan: Around 2
-      I'm usually on break. If they stopped by then I probably didn't see them.\r"
+      on the day she disappeared? Around 2pm? Is that correct?\r"
 --- !u!114 &74812038
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1598,7 +1616,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812039
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1666,7 +1684,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &74812043
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1693,7 +1711,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812044
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1710,7 +1728,7 @@ MonoBehaviour:
     booleanVal: 1
 --- !u!114 &74812045
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1737,7 +1755,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812046
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1754,7 +1772,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &74812047
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1771,7 +1789,7 @@ MonoBehaviour:
     booleanVal: 1
 --- !u!114 &74812048
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1845,7 +1863,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &74812051
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1872,7 +1890,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812052
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1889,7 +1907,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &74812053
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1929,7 +1947,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &74812055
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -1943,6 +1961,288 @@ MonoBehaviour:
   targetObject: {fileID: 1057361806}
   methodName: UpdateCounter
   delay: 0
+--- !u!114 &74812056
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 219
+  indentLevel: 0
+  storyText: "Then Aoife\u2019s story doesn\u2019t add up."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812057
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 220
+  indentLevel: 0
+  storyText: Alright then. Thank you for your help.
+  description: 
+  character: {fileID: 613027383}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 222
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1036977558}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 08099a259a73f8d4cb130f926b5a1df7, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &74812059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 221
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: cf311afbc6f2d28459c10a7c1ed906f1, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &74812060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 223
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1036977558}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 08099a259a73f8d4cb130f926b5a1df7, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &74812061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 226
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1036977558}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: bed01122d68cb084092dece58aacabd7, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &74812062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 225
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ethan: Around 2 I'm usually on break. If they stopped by then I probably
+      didn't see them.\r"
+--- !u!114 &74812063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 224
+  indentLevel: 0
+  storyText: Ah...
+  description: 
+  character: {fileID: 1036977558}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 227
+  indentLevel: 0
+  storyText: '...that.'
+  description: 
+  character: {fileID: 1036977558}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 229
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 613027383}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f630f159df3f9304f9fe014a96001f47, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &74812066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 228
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 613027383}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: bbcd5db7ee5fb88489f9aacb8c429793, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!114 &74812073
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1984,32 +2284,6 @@ MonoBehaviour:
   scope: 1
   key: eyeUsedCounter
   value: 0
---- !u!114 &74812117
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 74811995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 127
-  indentLevel: 0
-  storyText: That.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 1
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!1 &76731907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2716,7 +2990,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 226248ac6f184e448af731df91b91958, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c27ebc63d63c1f74a8e1e0810e15dd9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4397,6 +4671,7 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: bed01122d68cb084092dece58aacabd7, type: 3}
+  - {fileID: 21300000, guid: 08099a259a73f8d4cb130f926b5a1df7, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 1596669334}
   description: 
@@ -5690,7 +5965,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 226248ac6f184e448af731df91b91958, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c27ebc63d63c1f74a8e1e0810e15dd9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6632,7 +6907,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 226248ac6f184e448af731df91b91958, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c27ebc63d63c1f74a8e1e0810e15dd9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6758,7 +7033,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 226248ac6f184e448af731df91b91958, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c27ebc63d63c1f74a8e1e0810e15dd9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7731,6 +8006,18 @@ Prefab:
       propertyPath: setSayDialog
       value: 
       objectReference: {fileID: 1272588197}
+    - target: {fileID: 114760724959083114, guid: e4f9592aa10b6074c93f9a8bd9e7cceb,
+        type: 2}
+      propertyPath: portraits.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: f630f159df3f9304f9fe014a96001f47,
+        type: 3}
+    - target: {fileID: 114760724959083114, guid: e4f9592aa10b6074c93f9a8bd9e7cceb,
+        type: 2}
+      propertyPath: portraits.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: bbcd5db7ee5fb88489f9aacb8c429793,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e4f9592aa10b6074c93f9a8bd9e7cceb, type: 2}
   m_IsPrefabParent: 0
