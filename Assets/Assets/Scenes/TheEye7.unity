@@ -855,15 +855,6 @@ GameObject:
   - component: {fileID: 74812059}
   - component: {fileID: 74812065}
   - component: {fileID: 74812064}
-  - component: {fileID: 74812063}
-  - component: {fileID: 74812067}
-  - component: {fileID: 74812066}
-  - component: {fileID: 74812070}
-  - component: {fileID: 74812069}
-  - component: {fileID: 74812072}
-  - component: {fileID: 74812071}
-  - component: {fileID: 74812073}
-  - component: {fileID: 74812074}
   - component: {fileID: 74812068}
   - component: {fileID: 74812080}
   - component: {fileID: 74812079}
@@ -886,22 +877,9 @@ GameObject:
   - component: {fileID: 74812088}
   - component: {fileID: 74812087}
   - component: {fileID: 74812093}
-  - component: {fileID: 74812091}
-  - component: {fileID: 74812092}
-  - component: {fileID: 74812094}
-  - component: {fileID: 74812101}
-  - component: {fileID: 74812100}
-  - component: {fileID: 74812099}
-  - component: {fileID: 74812098}
-  - component: {fileID: 74812097}
-  - component: {fileID: 74812096}
-  - component: {fileID: 74812095}
   - component: {fileID: 74812110}
   - component: {fileID: 74812104}
   - component: {fileID: 74812103}
-  - component: {fileID: 74812121}
-  - component: {fileID: 74812122}
-  - component: {fileID: 74812123}
   - component: {fileID: 74812127}
   - component: {fileID: 74812126}
   - component: {fileID: 74812128}
@@ -932,9 +910,6 @@ GameObject:
   - component: {fileID: 74812153}
   - component: {fileID: 74812155}
   - component: {fileID: 74812154}
-  - component: {fileID: 74812158}
-  - component: {fileID: 74812157}
-  - component: {fileID: 74812156}
   - component: {fileID: 74812114}
   - component: {fileID: 74812113}
   - component: {fileID: 74812112}
@@ -954,6 +929,31 @@ GameObject:
   - component: {fileID: 74812118}
   - component: {fileID: 74812117}
   - component: {fileID: 74812116}
+  - component: {fileID: 74812094}
+  - component: {fileID: 74812092}
+  - component: {fileID: 74812091}
+  - component: {fileID: 74812074}
+  - component: {fileID: 74812073}
+  - component: {fileID: 74812072}
+  - component: {fileID: 74812071}
+  - component: {fileID: 74812070}
+  - component: {fileID: 74812069}
+  - component: {fileID: 74812067}
+  - component: {fileID: 74812066}
+  - component: {fileID: 74812063}
+  - component: {fileID: 74812158}
+  - component: {fileID: 74812157}
+  - component: {fileID: 74812156}
+  - component: {fileID: 74812123}
+  - component: {fileID: 74812122}
+  - component: {fileID: 74812121}
+  - component: {fileID: 74812101}
+  - component: {fileID: 74812100}
+  - component: {fileID: 74812099}
+  - component: {fileID: 74812098}
+  - component: {fileID: 74812097}
+  - component: {fileID: 74812096}
+  - component: {fileID: 74812095}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -974,7 +974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -399.6476, y: -285.28918}
+  scrollPos: {x: -1200.9507, y: -287.46075}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 200
@@ -986,9 +986,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812023}
+  - {fileID: 74812061}
   selectedCommands:
-  - {fileID: 74812031}
+  - {fileID: 74812092}
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
@@ -2630,23 +2630,13 @@ MonoBehaviour:
   commandList:
   - {fileID: 74812127}
   - {fileID: 74812065}
-  - {fileID: 74812158}
   - {fileID: 74812063}
-  - {fileID: 74812067}
-  - {fileID: 74812066}
-  - {fileID: 74812070}
-  - {fileID: 74812069}
-  - {fileID: 74812072}
-  - {fileID: 74812071}
-  - {fileID: 74812073}
-  - {fileID: 74812074}
-  - {fileID: 74812123}
-  - {fileID: 74812093}
-  - {fileID: 74812156}
-  - {fileID: 74812092}
-  - {fileID: 74812091}
-  - {fileID: 74812094}
+  - {fileID: 74812158}
   - {fileID: 74812157}
+  - {fileID: 74812156}
+  - {fileID: 74812123}
+  - {fileID: 74812122}
+  - {fileID: 74812121}
   - {fileID: 74812101}
   - {fileID: 74812100}
   - {fileID: 74812099}
@@ -2654,8 +2644,18 @@ MonoBehaviour:
   - {fileID: 74812097}
   - {fileID: 74812096}
   - {fileID: 74812095}
-  - {fileID: 74812121}
-  - {fileID: 74812122}
+  - {fileID: 74812093}
+  - {fileID: 74812094}
+  - {fileID: 74812092}
+  - {fileID: 74812091}
+  - {fileID: 74812074}
+  - {fileID: 74812073}
+  - {fileID: 74812072}
+  - {fileID: 74812071}
+  - {fileID: 74812070}
+  - {fileID: 74812069}
+  - {fileID: 74812067}
+  - {fileID: 74812066}
   - {fileID: 74812064}
 --- !u!114 &74812062
 MonoBehaviour:
@@ -2683,28 +2683,33 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &74812063
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 63
+  itemId: 380
   indentLevel: 1
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: "Siobhan: This is so sad, Anna. What\u2019s happening to you? I\u2019m
-      worried about you, why don\u2019t you believe me?\r\nAnna: If you were, you
-      wouldn\u2019t have left.\r\nSiobhan: That\u2019s not fair and you know it. I
-      really do want you to be careful and healthy. But that\u2019s fine. \r\nAnna:
-      I just don\u2019t trust you anymore, Sib. I don\u2019t know how you could abandon
-      me like that. \r\nSiobhan: I\u2019m not doing this anymore. I am so worried
-      about you, and you\u2019re just stuck in the past. Go back to New York, I\u2019ll
-      deal with the rest of this. Just go. \r\nSiobhan: Maybe\u2026 maybe one day
-      we can reconnect."
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1562581572}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: a5325c0ecc1e7704080111913e0250bf, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!114 &74812064
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2738,7 +2743,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 3
+    integerVal: 2
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -2747,34 +2752,25 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812066
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 66
+  itemId: 379
   indentLevel: 1
-  storyText: It took one day for our relationship to end, and in the past day it almost
-    came back to life.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: StartScreen
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &74812067
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -2783,9 +2779,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 65
+  itemId: 378
   indentLevel: 1
-  storyText: One day. Huh.
+  storyText: THE END?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2831,7 +2827,7 @@ MonoBehaviour:
   - {fileID: 74812075}
 --- !u!114 &74812069
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -2840,16 +2836,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 68
+  itemId: 377
   indentLevel: 1
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "The Eye: Annabelle, you don\u2019t need one more day with her.\r\nThe
-      Eye: You could have so many more with me.\r\nThe Eye: Think of all the cases
-      we could solve. You would never have to worry about reading someone wrong again."
+    stringVal: "The Eye: Don\u2019t worry, Answerer\u2026\r\nThe Eye: \u2026my dear
+      Annabelle\u2026\r\nThe Eye: ...we\u2019re stronger together."
 --- !u!114 &74812070
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -2858,33 +2853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 67
-  indentLevel: 1
-  storyText: Maybe one more day is all we need.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &74812071
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 74811995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 70
+  itemId: 376
   indentLevel: 1
   storyText: "But I think I\u2019ve outstayed my welcome. For now, I\u2019ll just
     have to live with the mystery."
@@ -2900,9 +2869,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &74812072
+--- !u!114 &74812071
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -2911,7 +2880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 69
+  itemId: 375
   indentLevel: 1
   storyText: "Maybe. The Eye did help me solve this case. Maybe it could help me solve
     a few more, even if I still don\u2019t know where it came from. It appeared not
@@ -2928,9 +2897,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &74812073
+--- !u!114 &74812072
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -2939,15 +2908,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 71
+  itemId: 374
   indentLevel: 1
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "The Eye: Don\u2019t worry, Answerer\u2026\r\nThe Eye: \u2026my dear
-      Annabelle\u2026\r\nThe Eye: ...we\u2019re stronger together."
---- !u!114 &74812074
+    stringVal: "The Eye: Annabelle, you don\u2019t need one more day with her.\r\nThe
+      Eye: You could have so many more with me.\r\nThe Eye: Think of all the cases
+      we could solve. You would never have to worry about reading someone wrong again."
+--- !u!114 &74812073
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -2956,9 +2926,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 72
+  itemId: 373
   indentLevel: 1
-  storyText: THE END?
+  storyText: Maybe one more day is all we need.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 372
+  indentLevel: 1
+  storyText: It took one day for our relationship to end, and in the past day it almost
+    came back to life.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3311,7 +3308,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &74812091
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3320,10 +3317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 262
+  itemId: 371
   indentLevel: 1
-  storyText: "The Eye's right. It\u2019s a better companion to me than Siobhan ever
-    was."
+  storyText: One day. Huh.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3338,7 +3334,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &74812092
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3347,14 +3343,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 263
+  itemId: 370
   indentLevel: 1
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Siobhan: Something is really going wrong with you. I don\u2019t understand
-      who you are anymore.\r\nAnna: No, you\u2019re just jealous I managed to solve
-      it. I don\u2019t want you dragging me down anymore. All you do is slow me down,
-      Siobhan."
+    stringVal: "Siobhan: This is so sad, Anna. What\u2019s happening to you? I\u2019m
+      worried about you, why don\u2019t you believe me?\r\nAnna: If you were, you
+      wouldn\u2019t have left.\r\nSiobhan: That\u2019s not fair and you know it. I
+      really do want you to be careful and healthy. But that\u2019s fine. \r\nAnna:
+      I just don\u2019t trust you anymore, Sib. I don\u2019t know how you could abandon
+      me like that. \r\nSiobhan: I\u2019m not doing this anymore. I am so worried
+      about you, and you\u2019re just stuck in the past. Go back to New York, I\u2019ll
+      deal with the rest of this. Just go. \r\nSiobhan: Maybe\u2026 maybe one day
+      we can reconnect."
 --- !u!114 &74812093
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3370,27 +3371,54 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &74812094
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 264
+  itemId: 369
   indentLevel: 1
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: "Siobhan: That\u2019s enough. That\u2019s so unfair, and you know it.
-      You didn\u2019t respect me and you let me leave.\r\nAnna: I {i}let{\\i} you
-      leave? You abandoned me because I wasn\u2019t as scared when we got mugged in
-      New York as you were. I\u2019d dealt with it before, and you couldn\u2019t handle
-      it. So you ran away, like a coward.\r\n"
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1562581572}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: a5325c0ecc1e7704080111913e0250bf, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!114 &74812095
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 393
+  indentLevel: 1
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: StartScreen
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &74812096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3399,7 +3427,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 271
+  itemId: 392
+  indentLevel: 1
+  storyText: THE END?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 391
   indentLevel: 1
   storyText: '...I don''t know.'
   description: 
@@ -3414,9 +3468,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &74812096
+--- !u!114 &74812098
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3425,7 +3479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 270
+  itemId: 390
   indentLevel: 1
   storyText: "But if me doing what it takes to get things done is too much for you,
     then maybe we weren't\u2026"
@@ -3441,9 +3495,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &74812097
+--- !u!114 &74812099
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3452,7 +3506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 269
+  itemId: 389
   indentLevel: 1
   storyText: Siobhan, this isn't how I wanted things to end.
   description: 
@@ -3467,9 +3521,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &74812098
+--- !u!114 &74812100
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3478,7 +3532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 268
+  itemId: 388
   indentLevel: 1
   storyText: "I used the Eye to help solve the case, and now she's blaming me for
     being \u201Cdifferent\u201D?\r"
@@ -3494,9 +3548,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &74812099
+--- !u!114 &74812101
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -3505,55 +3559,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 267
+  itemId: 387
   indentLevel: 1
   storyText: "Yeah, well, we've been \u201Cdone\u201D for a while now. This just makes
     it official."
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &74812100
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 74811995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 266
-  indentLevel: 1
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: "Siobhan: I\u2019m done with this. Go home, Annabelle. I\u2019ll deal
-      with cleaning up the mess. Thanks for your help...\r\nSiobhan: ...But we\u2019re
-      done."
---- !u!114 &74812101
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 74811995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 265
-  indentLevel: 1
-  storyText: Siobhan pauses, stunned. I can see tears welling up in her eyes, but
-    she pushes them back and shakes her head.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3762,7 +3771,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 3
+    integerVal: 2
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -4012,7 +4021,25 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &74812121
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 386
+  indentLevel: 1
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Siobhan: I\u2019m done with this. Go home, Annabelle. I\u2019ll deal
+      with cleaning up the mess. Thanks for your help...\r\nSiobhan: ...But we\u2019re
+      done."
+--- !u!114 &74812122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
@@ -4021,9 +4048,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 309
+  itemId: 385
   indentLevel: 1
-  storyText: THE END?
+  storyText: Siobhan pauses, stunned. I can see tears welling up in her eyes, but
+    she pushes them back and shakes her head.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4036,42 +4064,35 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &74812122
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 74811995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 310
-  indentLevel: 1
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: StartScreen
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
 --- !u!114 &74812123
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 311
+  itemId: 384
   indentLevel: 1
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: StartScreen
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1562581572}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 902466890dfdffa49bef557671aaae79, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!114 &74812124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4952,27 +4973,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 347
+  itemId: 383
   indentLevel: 1
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1562581572}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a5325c0ecc1e7704080111913e0250bf, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Siobhan: That\u2019s enough. That\u2019s so unfair, and you know it.
+      You didn\u2019t respect me and you let me leave.\r\nAnna: I {i}let{\\i} you
+      leave? You abandoned me because I wasn\u2019t as scared when we got mugged in
+      New York as you were. I\u2019d dealt with it before, and you couldn\u2019t handle
+      it. So you ran away, like a coward.\r\n"
 --- !u!114 &74812157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4981,27 +4993,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 346
+  itemId: 382
   indentLevel: 1
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1562581572}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 902466890dfdffa49bef557671aaae79, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
+  storyText: "The Eye's right. It\u2019s a better companion to me than Siobhan ever
+    was."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &74812158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5010,27 +5020,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 74811995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 345
+  itemId: 381
   indentLevel: 1
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1562581572}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a5325c0ecc1e7704080111913e0250bf, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Siobhan: Something is really going wrong with you. I don\u2019t understand
+      who you are anymore.\r\nAnna: No, you\u2019re just jealous I managed to solve
+      it. I don\u2019t want you dragging me down anymore. All you do is slow me down,
+      Siobhan."
 --- !u!114 &74812159
 MonoBehaviour:
   m_ObjectHideFlags: 0
