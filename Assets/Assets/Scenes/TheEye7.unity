@@ -954,6 +954,8 @@ GameObject:
   - component: {fileID: 74812097}
   - component: {fileID: 74812096}
   - component: {fileID: 74812095}
+  - component: {fileID: 74812162}
+  - component: {fileID: 74812161}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Flowchart
@@ -974,11 +976,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -1200.9507, y: -287.46075}
+  scrollPos: {x: 53.842285, y: -290.31885}
   variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 0
-  blockViewHeight: 200
-  zoom: 0.46049997
+  variablesExpanded: 1
+  blockViewHeight: 249
+  zoom: 0.71125
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -986,9 +988,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 74812061}
+  - {fileID: 74811998}
   selectedCommands:
-  - {fileID: 74812092}
+  - {fileID: 74812161}
   variables:
   - {fileID: 74812013}
   - {fileID: 74812042}
@@ -1046,7 +1048,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 252.95874
     y: 437.0802
-    width: 193.32248
+    width: 203.25131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1059,6 +1061,8 @@ MonoBehaviour:
   - {fileID: 74812021}
   - {fileID: 74812011}
   - {fileID: 74812010}
+  - {fileID: 74812162}
+  - {fileID: 74812161}
   - {fileID: 74812009}
   - {fileID: 74812008}
   - {fileID: 74812007}
@@ -1342,10 +1346,7 @@ MonoBehaviour:
   itemId: 1
   indentLevel: 1
   storyText: "I arrive at the woods feeling a little worse for wear. I\u2019m tired,
-    cold, and irritable. Honestly? I can\u2019t stand this tiny town. The silence
-    is heavy, oppressive. It feels like the world left me alone with nothing but my
-    thoughts and the Eye\u2019s voice in my head. I just want to finish this damn
-    case, and get it all over with."
+    cold, and irritable. Honestly? I can\u2019t stand this tiny town."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1378,7 +1379,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 3
+    integerVal: 2
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -1619,7 +1620,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 532.95874
     y: 370.0802
-    width: 199.83714
+    width: 210.28119
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1650,7 +1651,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 505.95874
     y: 485.0802
-    width: 297.557
+    width: 312.9174
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2140,7 +2141,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 901.6962
     y: 541.059
-    width: 158.57764
+    width: 162.47803
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2195,7 +2196,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 902.30676
     y: 403.86124
-    width: 243.2682
+    width: 252.46045
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2465,7 +2466,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1172.9354
     y: 499.57678
-    width: 136.86212
+    width: 139.98242
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2547,12 +2548,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1742.8834
     y: 577.64514
-    width: 319.27255
+    width: 322.75922
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 60
-  blockName: "I care about you too, Siobhan. I\u2019ve missed you.1"
+  blockName: "I care about you too, Siobhan. I\u2019ve missed you."
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -2619,7 +2620,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1739.6367
     y: 378.24774
-    width: 340.98807
+    width: 356.50262
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2809,7 +2810,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1211.0232
     y: 389.90808
-    width: 132.51901
+    width: 142.79437
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5084,6 +5085,59 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &74812161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 395
+  indentLevel: 1
+  storyText: I just want to finish this damn case, and get it all over with.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &74812162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74811995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 394
+  indentLevel: 1
+  storyText: "The silence is heavy, oppressive. It feels like the world left me alone
+    with nothing but my thoughts and the Eye\u2019s voice in my head."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &76731907
 GameObject:
   m_ObjectHideFlags: 0
